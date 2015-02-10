@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Deep Architectures}{6}{0}{1}
+\beamer@sectionintoc {2}{Artificial Deep Neural Networks}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Concept}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Problems}{13}{0}{2}
+\beamer@sectionintoc {3}{Unsupervised greedy layer-wise pre-training}{14}{0}{3}
+\beamer@sectionintoc {4}{Experiments}{20}{0}{4}
+\beamer@subsectionintoc {4}{1}{Auto-Encoder for data compression}{21}{0}{4}
+\beamer@subsectionintoc {4}{2}{dNN for digit recognition}{24}{0}{4}
+\beamer@subsectionintoc {4}{3}{Auto-Encoder for image reconstruction}{26}{0}{4}
+\beamer@sectionintoc {5}{Summary}{30}{0}{5}

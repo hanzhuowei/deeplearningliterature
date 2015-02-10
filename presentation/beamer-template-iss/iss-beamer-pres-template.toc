@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Firstsection}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{First subsection}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Secondsection}{9}{0}{1}
+\beamer@sectionintoc {2}{Third}{12}{0}{2}
+\beamer@subsectionintoc {2}{1}{SubSectiones}{17}{0}{2}
