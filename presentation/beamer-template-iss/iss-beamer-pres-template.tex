@@ -1,0 +1,235 @@
+% ISS presentation template
+%
+% Change history:
+% 24.06.2010    Jürgen Ruoff        Initial creation
+% 01.07.2010    Patrick Häcker      Generalization
+% 02.07.2010    Patrick Häcker      Adjustment
+% 15.11.2010    Patrick Häcker      Improvements
+% 20.05.2011    Patrick Häcker      Add presentation type
+% 06.01.2012	P. Hermannstädter 	Adapted to ISS, small mods
+
+% Insert your name here
+\newcommand{\presenter}{LONGPRESENTERNAME}
+\newcommand{\presentershort}{SHORTPRESENTERNAME}
+\newcommand{\presenteremail}{PRESENTERMAIL} 		% can be accessed using \presenteremail
+
+% Insert presentation title here
+\newcommand{\presentationtitle}{TITLE}
+\newcommand{\shortpresentationtitle}{TITLEshortBOTTOM}
+
+% Insert type of presentation here (or comment line), probably one of:
+% Mitarbeitervortrag, Bachelor-Arbeit, Master-Arbeit, Bachelor thesis, Master thesis
+\newcommand{\presentationtype}{SUBTITLE}
+
+% Insert presentation date here
+\newcommand{\presentationdate}{MM.DD.YYYY}
+
+% Uncomment the following line, if you write in English
+\newcommand{\lang}{german}
+
+% Uncomment the following line, if you want to create handouts (setting to false does not work!)
+%\newcommand{\handoutmode}{true}
+
+% Load beamer class using LSS style
+\input{presentation}
+
+\usepackage{setspace}
+
+% My commands:
+
+% -----------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
+\begin{document}
+\lstset{basicstyle=\small\ttfamily,xleftmargin=15pt,language=Matlab,
+        commentstyle=\color{green},showstringspaces=false,stringstyle=\color{magenta}\ttfamily}
+
+% -----------------------------------------------------------------------------
+% This is the title page
+\begin{frame}[t,plain]
+	\titlepage
+\end{frame}
+
+
+% -----------------------------------------------------------------------------
+% Motivation slide
+\begin{frame}[t]{Motivation}
+\uncover<1->{
+	\lstinline">> why"\\
+	\lstinline"To fool the tall good and smart system manager."}
+\only<2->{
+	\begin{figure}
+%		\includegraphics[width=\textwidth]{ }
+	% Images: 	pdflatex can handle png jpg pdf and so on directly, but no eps
+	%			latex and dvi2ps ps2pdf can handle eps and eventually png pdf or jpg if you provide a bounding box
+	
+	\end{figure}
+}
+
+\end{frame}
+
+
+% -----------------------------------------------------------------------------
+% This is the table of contents. You can insert a motivation before or after this slide.
+\begin{frame}
+	\ifthenelse{\equal{\lang}{ngerman}}{
+		\frametitle{Inhaltsverzeichnis}
+	}{
+		\frametitle{Table of Contents}
+	}
+	\tableofcontents
+\end{frame}
+
+% Add an extra slide at the beginning of each section while highlighting the current section
+% Use \section* to skip the slide once or comment the following to skip all overview slides.
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>
+		\ifthenelse{\equal{\lang}{ngerman}}{
+			\frametitle{Inhaltsverzeichnis}
+		}{
+			\frametitle{Table of Contents}
+		}
+% 		\frametitle{\contentsname}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+%% =========
+\section{Firstsection}
+\subsection{First subsection}
+% -----------------------------------------------------------------------------
+\begin{frame}[t]{Slidetitle}
+\begin{itemize}
+	\item Lorem:\\
+	\begin{itemize}
+		\item Ipsum
+		\item Dolor
+	\end{itemize}
+%	\item Methode:\\
+%	\begin{itemize}
+%		\item Angewandte Übungsaufgaben von Mathworks
+%		\item Überblicksvorlesung
+%		\item Betreute Einzelübungen am PC, geschulte Tutoren
+%	\end{itemize}
+	\pause
+	\item Sit amet, consectetur adipiscing elit:\\
+	\begin{itemize}
+		\item Phasellus ut est eget diam convallis porta.
+		\item Ut dictum consequat sagittis.
+		\item Cras laoreet sapien ut lectus sagittis et feugiat sapien interdum. 
+	\end{itemize}
+	\pause	
+	\item In lorem purus, pulvinar in convallis ut, ullamcorper ac dolor.\\
+	\begin{itemize}
+		\item Sed nisi ligula, euismod sed consequat quis, euismod et quam
+		\item Fusce mi mi, 
+		\item ultricies
+		\item vitae rhoncus sed,
+	\end{itemize}			
+\end{itemize}		
+	
+\end{frame}
+
+%% =========
+\subsection{Secondsection}
+% -----------------------------------------------------------------------------
+\begin{frame}[t]{Lorem Ipsum}
+	\begin{itemize}	
+		\item Lorem Ipsum
+		\item dolor
+		\item dolor
+		\item dolor\\
+	\begin{columns}[t,onlytextwidth]
+		\column<2->{.5\textwidth}
+		Pro:			
+		\begin{itemize}
+			\item Lorem Ipsum			
+			\item Lorem Ipsum
+			\item Lorem Ipsum
+			\item ...
+		\end{itemize}
+		\column<3->{.5\textwidth}
+		Contra:		
+		\begin{itemize}
+			\item Lorem Ipsum
+			\item Lorem Ipsum
+			\item Lorem Ipsum
+			\item Lorem Ipsum
+			\item ...
+		\end{itemize}				
+		
+	
+	\end{columns}
+	\end{itemize}		
+\end{frame}
+
+%% =========
+\section{Third}
+% -----------------------------------------------------------------------------
+\begin{frame}[t]{Command Window}
+	\begin{itemize}
+		\item Prima 
+		\item<2-> Secunda
+	\end{itemize}
+
+	\begin{figure}
+% 	\includegraphics<2->[height=0.4\textheight]{commandwindow.pdf}
+	\end{figure}
+	\only<3->{
+	\begin{itemize}
+		\item Tertia
+		\item Quarta
+	\end{itemize}
+	}
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\begin{frame}[t]{Quart}
+\begin{columns}[t,totalwidth=\textwidth]
+
+	\begin{column}{0.7\textwidth}
+	
+		\begin{figure}
+	 		%\includegraphics[width=\columnwidth]{file.png}
+	 	\end{figure}	
+	 	
+	\end{column}
+	
+	\begin{column}{0.3\textwidth}
+	
+		\begin{itemize}
+			\item Lorem
+			\item Ipsum\\ \lstinline"code" 
+			\item Dolor
+		\end{itemize}
+		
+	\end{column}
+	
+\end{columns}		
+ 	
+\end{frame}
+
+% -----------------------------------------------------------------------------
+\subsection{SubSectiones}
+\begin{frame}[t]{SubSectiones}
+\pause
+Definitium est\\
+\flushright{Caesar}
+	\begin{itemize}
+			\item Lorem
+				\begin{itemize}
+					\item Ipsum
+					\item ...
+					\item ...
+					\item ...
+				\end{itemize}
+			\pause
+			\item Code:\\
+				\lstinline"A!=B"\\
+				\lstinline"A & B"\\
+				\lstinline"define C"\\
+				~~~~\lstinline"result"
+	\end{itemize}
+\end{frame}
+
+\end{document}
