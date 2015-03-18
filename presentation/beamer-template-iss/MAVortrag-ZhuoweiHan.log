@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.9.3)  17 MAR 2015 16:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  18 MAR 2015 15:15
 entering extended mode
  %&-line parsing enabled.
 **MAVortrag-ZhuoweiHan.tex
@@ -1595,7 +1595,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 43--43
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-<isslogocolor.pdf, id=67, 312.97928pt x 241.84352pt>
+<isslogocolor.pdf, id=43, 312.97928pt x 241.84352pt>
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
@@ -1654,26 +1654,25 @@ Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./isslogocolor.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 75.
+(Font)              <5> on input line 79.
+ <../Fig/paraliguistic.png, id=68, 674.52pt x 280.04625pt>
+File: ../Fig/paraliguistic.png Graphic file (type png)
+
+<use ../Fig/paraliguistic.png>
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
-Overfull \vbox (76.36656pt too high) detected at line 75
- []
-
-
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
 [2
 
-]
+ <../Fig/paraliguistic.png>]
+File: ../Fig/paraliguistic.png Graphic file (type png)
+ <use ../Fig/paraliguistic.png>
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \vbox (76.36656pt too high) detected at line 75
- []
 
-
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -1708,22 +1707,8 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [6
 
 ]
-
-! LaTeX Error: File `figures/brain' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.126 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -1740,22 +1725,11 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [8
 
 ]
-
-! LaTeX Error: File `figures/dNN' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -1763,457 +1737,18 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [9
 
 ]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[10
-
-]
-
-! LaTeX Error: File `figures/gradDecay' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/meanGradMag' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[10]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
 [11
-
-] (./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[12
-
-]
-
-! LaTeX Error: File `figures/layerTraining01' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.249 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[13
-
-]
-
-! LaTeX Error: File `figures/layerTraining02' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[14
-
-]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[15
-
-]
-
-! LaTeX Error: File `figures/layerTraining03' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.339 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[16
-
-]
-
-! LaTeX Error: File `figures/layerTraining04' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[17
-
-] (./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[18
-
-]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 389.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 389.
-
-
-! LaTeX Error: File `figures/compressionStructure' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.389 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[19
-
-]
-
-! LaTeX Error: File `figures/texture' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.406 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/textureRec' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.406 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[20
-
-]
-
-! LaTeX Error: File `figures/extractedFeatures' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.437 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[21
-
-]
-
-! LaTeX Error: File `figures/featuresMNIST' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.473 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[22
-
-]
-
-! LaTeX Error: File `figures/digitPrototypes' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.497 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.497 	\end{frame}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.497 	\end{frame}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[23
-
-]
-
-! LaTeX Error: File `figures/reconstructionStructure' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.533 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[24
-
-]
-
-! LaTeX Error: File `figures/distorted01' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.555 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/reconstruction01' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.555 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[25
-
-]
-
-! LaTeX Error: File `figures/distorted02' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.577 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/reconstruction02' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.577 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[26
-
-]
-
-! LaTeX Error: File `figures/denoising' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.589 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[27
-
-] (./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[28
-
-]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[29
 
 ]
 \tf@nav=\write8
@@ -2235,31 +1770,31 @@ FiXme Summary: Number of notes: 0,
 
 (./MAVortrag-ZhuoweiHan.aux) ) 
 Here is how much of TeX's memory you used:
- 30033 strings out of 493848
- 637841 string characters out of 1152824
- 790202 words of memory out of 3000000
- 32275 multiletter control sequences out of 15000+50000
- 118023 words of font info for 92 fonts, out of 3000000 for 9000
+ 29805 strings out of 493848
+ 634962 string characters out of 1152823
+ 788814 words of memory out of 3000000
+ 32133 multiletter control sequences out of 15000+50000
+ 85028 words of font info for 69 fonts, out of 3000000 for 9000
  725 hyphenation exceptions out of 8191
  51i,16n,78p,1069b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/
-usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
-lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.en
+c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on MAVortrag-ZhuoweiHan.pdf (29 pages, 429526 bytes).
+/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7.pf
+b>
+Output written on MAVortrag-ZhuoweiHan.pdf (11 pages, 321998 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

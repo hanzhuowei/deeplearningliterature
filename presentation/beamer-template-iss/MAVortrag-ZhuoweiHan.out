@@ -1,10 +1,4 @@
-\BOOKMARK [2][]{Outline0.1}{Speech Emotion Features}{}
+\BOOKMARK [2][]{Outline0.1}{Foundations}{}
 \BOOKMARK [2][]{Outline0.2}{Deep Neural Networks}{}
 \BOOKMARK [3][]{Outline0.2.1.9}{Concept}{Outline0.2}
 \BOOKMARK [3][]{Outline0.2.2.11}{Problems}{Outline0.2}
-\BOOKMARK [2][]{Outline0.3}{Unsupervised greedy layer-wise pre-training}{}
-\BOOKMARK [2][]{Outline0.4}{Experiments}{}
-\BOOKMARK [3][]{Outline0.4.1.19}{Auto-Encoder for data compression}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.2.22}{dNN for digit recognition}{Outline0.4}
-\BOOKMARK [3][]{Outline0.4.3.24}{Auto-Encoder for image reconstruction}{Outline0.4}
-\BOOKMARK [2][]{Outline0.5}{Summary}{}

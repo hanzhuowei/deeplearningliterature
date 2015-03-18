@@ -1,12 +1,6 @@
 \beamer@endinputifotherversion {3.10pt}
 \select@language {ngerman}
-\beamer@sectionintoc {1}{Speech Emotion Features}{5}{0}{1}
+\beamer@sectionintoc {1}{Foundations}{5}{0}{1}
 \beamer@sectionintoc {2}{Deep Neural Networks}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Concept}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{Problems}{11}{0}{2}
-\beamer@sectionintoc {3}{Unsupervised greedy layer-wise pre-training}{12}{0}{3}
-\beamer@sectionintoc {4}{Experiments}{18}{0}{4}
-\beamer@subsectionintoc {4}{1}{Auto-Encoder for data compression}{19}{0}{4}
-\beamer@subsectionintoc {4}{2}{dNN for digit recognition}{22}{0}{4}
-\beamer@subsectionintoc {4}{3}{Auto-Encoder for image reconstruction}{24}{0}{4}
-\beamer@sectionintoc {5}{Summary}{28}{0}{5}
