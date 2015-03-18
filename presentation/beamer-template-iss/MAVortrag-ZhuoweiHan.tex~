@@ -7,19 +7,19 @@
 % 15.11.2010    Patrick Häcker      Improvements
 % 20.05.2011    Patrick Häcker      Add presentation type
 % 06.01.2012	P. Hermannstädter 	Adapted to ISS, small mods
-
+% \graphicspath{ {../Fig/} }
 % Insert your name here
 \newcommand{\presenter}{Zhuowei Han}
 \newcommand{\presentershort}{Z.Han}
 \newcommand{\presenteremail}{} 		% can be accessed using \presenteremail
 
 % Insert presentation title here
-\newcommand{\presentationtitle}{Learning Deep Architectures for Pattern Recognition}
+\newcommand{\presentationtitle}{Deep Neural Network for Speech Emotion Recognition}
 \newcommand{\shortpresentationtitle}{Deep Learning}
 
 % Insert type of presentation here (or comment line), probably one of:
 % Mitarbeitervortrag, Bachelor-Arbeit, Master-Arbeit, Bachelor thesis, Master thesis
-\newcommand{\presentationtype}{---An introduction to Deep Neural Networks---}
+\newcommand{\presentationtype}{---A Study of Deep Learning---}
 
 % Insert presentation date here
 \newcommand{\presentationdate}{05.06.2014}
@@ -34,7 +34,8 @@
 \input{presentation}
 
 \usepackage{setspace}
-
+\usepackage{graphicx}
+\graphicspath{ {../Fig/} }
 % My commands:
 
 % -----------------------------------------------------------------------------
@@ -51,6 +52,27 @@
 
 
 % -----------------------------------------------------------------------------
+% Motivation slide
+\begin{frame}[t]{Motivation}
+\begin{minipage}[t]{0.48\linewidth}
+% \textcolor{blue}{\Large Why speech emotion recognition}
+	\begin{itemize}
+		\itemsep40pt
+		\item Most current work focuses on speech processing based on linguistic information,  e.g.: Skype Translator
+		\item<2-> More natural human-machine interaction requires paralinguistic information such as age, gender, emotion.
+		\item Speech Recognition / Speeker Identification / Emotion Recognition
+	\end{itemize}
+\end{minipage}
+
+\begin{minipage}[t]{0.48\linewidth}
+\textcolor{blue}{\Large Deep Network Applications}
+	\begin{itemize}
+		\item Handwriting Digit Recognition
+		\item Image Recognition
+	\end{itemize}
+\end{minipage}
+
+\end{frame}
 
 % -----------------------------------------------------------------------------
 % This is the table of contents. You can insert a motivation before or after this slide.
@@ -79,71 +101,9 @@
 }
 
 %% =========
-% Motivation slide
-\begin{frame}[t]{Motivation}
-\uncover<1->{
-\textcolor{blue}{\Large Issues from Pattern Recognition}
-
-\begin{minipage}[t]{0.48\linewidth}
-\begin{figure}
-\includegraphics{figures/patRec}
-\end{figure}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.48\linewidth}
-	\begin{itemize}
-		\itemsep40pt
-		\item Optical Character Recognition 
-		\item Object Recognition
-		\item Speech Recognition / Speeker Identification / Emotion Recognition
-	\end{itemize}
-\end{minipage}
-}
-
-\end{frame}
-
-\begin{frame}[t]{Motivation}
-\uncover<1->{
-\textcolor{blue}{\Large The usual approach}
-
-\begin{minipage}[t]{0.48\linewidth}
-\only<1-1>{
-\begin{figure}
-\includegraphics{figures/patternRecPipeline}
-\end{figure}}
-\only<2->{
-\begin{figure}
-\scalebox{0.7}{\includegraphics{figures/class2D}}
-\end{figure}}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.48\linewidth}
-	\only<1-1>{
-	\begin{figure}
-		\scalebox{0.7}{\includegraphics{figures/class2D}}
-	\end{figure}
-	}	
-	\only<2->{
-	\begin{itemize}	
-	\itemsep5pt	
-		\item Feature engineering heavily dependent on application
-						
-		\begin{itemize}
-			\item Natural clustering $P(X|Y = i)$ well separated
-			\item Smoothness $x \approx y \rightarrow f(x) \approx f(y)$
-		\end{itemize}
-		
-		\item Gap between feature engineering / classification
-		\item Deep Architectures can bridge this gap by learning representations from high
-			dimensional data
-	\end{itemize}}
-	
-\end{minipage}
-}
-
-\end{frame}
-
-\section{Deep Architectures}
+\section{Speech Emotion Features}
 % -----------------------------------------------------------------------------
-\begin{frame}[t]{Deep Architectures}
+\begin{frame}[t]{Mel Frequency Cepstral Features}
 
 	\begin{itemize}
 		\item Yoshua Bengio: A set of algorithms in machine 
@@ -165,24 +125,24 @@
 
 \end{frame}
 
-\begin{frame}[t]{Deep Architectures}
-	\uncover<1->{
-	\textcolor{blue}{\Large Deep Architectures in machine learning}	
-	\begin{tabular}{c|c|c}
-		Deep Belief Networks & Deep Neural Networks & Convolutional dNNs\\
-		Geoffrey E. Hinton 2006 & Yoshua Bengio 2006 & others
-	\end{tabular}\\}
-	\vspace{0.5cm}
-	\uncover<1->{
-	\textcolor{blue}{\Large Evolution of Deep Neural Networks}	
-	\begin{figure}
-		\includegraphics{figures/timeLine}
-	\end{figure}}
-\end{frame}
+% \begin{frame}[t]{Deep Architectures}
+% 	\uncover<1->{
+% 	\textcolor{blue}{\Large Deep Architectures in machine learning}	
+% 	\begin{tabular}{c|c|c}
+% 		Deep Belief Networks & Deep Neural Networks & Convolutional dNNs\\
+% 		Geoffrey E. Hinton 2006 & Yoshua Bengio 2006 & others
+% 	\end{tabular}\\}
+% 	\vspace{0.5cm}
+% 	\uncover<1->{
+% 	\textcolor{blue}{\Large Evolution of Deep Neural Networks}	
+% 	\begin{figure}
+% 		\includegraphics{figures/timeLine}
+% 	\end{figure}}
+% \end{frame}
 
 
 %% =========
-\section{Artificial Deep Neural Networks}
+\section{Deep Neural Networks}
 	\subsection{Concept}
 	\begin{frame}[t]{Structure of Deep Neural Networks}
 		\begin{figure}
@@ -269,7 +229,7 @@ N_l\uparrow$)
 	
 	
 	\begin{frame}[t]{Unsupervised greedy layer-wise pre-training}
-	
+	  
 		\begin{itemize}
 			\item Train the Deep Neural Network layer by layer (Hinton, Bengio)	
 			\item Truncate network after first layer		

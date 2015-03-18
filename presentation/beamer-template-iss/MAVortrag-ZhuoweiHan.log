@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  10 FEB 2015 13:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.9.3)  17 MAR 2015 16:42
 entering extended mode
  %&-line parsing enabled.
 **MAVortrag-ZhuoweiHan.tex
@@ -1397,27 +1397,27 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 (./MAVortrag-ZhuoweiHan.aux)
 \openout1 = `MAVortrag-ZhuoweiHan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
  (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 42.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 43.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1475,9 +1475,9 @@ driver: pdftex
 \MPnumerator=\count199
 \everyMPtoPDFconversion=\toks58
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 42.
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
+Package hyperref Info: Link coloring OFF on input line 43.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
  (./MAVortrag-ZhuoweiHan.out)
 (./MAVortrag-ZhuoweiHan.out)
 \@outlinefile=\write7
@@ -1487,41 +1487,41 @@ LaTeX Info: Redefining \pageref on input line 42.
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
+(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 42.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 42.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 42.
+(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 42.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
+(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 42.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 42.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 42.
+(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 42.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 42.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 42.
+(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 42.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 42.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 42.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 43.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1571,24 +1571,24 @@ Dictionary: translator-theorem-dictionary, Language: English
 tionary/translator-theorem-dictionary-German.dict
 Dictionary: translator-theorem-dictionary, Language: German 
 )
-LaTeX Info: Redefining \Ref on input line 42.
+LaTeX Info: Redefining \Ref on input line 43.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count200
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmss/m/n --> TS1/lmss/bx/n on input line 42.
-Package gensymb Info: Math companion symbols declared on input line 42.
-LaTeX Info: Redefining \degree on input line 42.
-LaTeX Info: Redefining \celsius on input line 42.
+(Font)                  TS1/lmss/m/n --> TS1/lmss/bx/n on input line 43.
+Package gensymb Info: Math companion symbols declared on input line 43.
+LaTeX Info: Redefining \degree on input line 43.
+LaTeX Info: Redefining \celsius on input line 43.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 42.
-LaTeX Info: Redefining \ohm on input line 42.
-Package gensymb Info: Using \textohm for \ohm on input line 42.
-Package gensymb Info: Using \textmu for \micro on input line 42.
+erthousand on input line 43.
+LaTeX Info: Redefining \ohm on input line 43.
+Package gensymb Info: Using \textohm for \ohm on input line 43.
+Package gensymb Info: Using \textmu for \micro on input line 43.
  (./MAVortrag-ZhuoweiHan.nav)
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 42--42
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 43--43
 [] 
  []
 
@@ -1598,53 +1598,53 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 <isslogocolor.pdf, id=67, 312.97928pt x 241.84352pt>
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 50.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 50.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 50.
+(Font)              <10.95> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 50.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              <6> on input line 51.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+bbold on input line 50.
+LaTeX Font Info:    Try loading font information for U+bbold on input line 51.
 
 (/usr/share/texmf-texlive/tex/latex/bbold/Ubbold.fd)
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 50.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 51.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 50.
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 51.
 
 
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
@@ -1653,24 +1653,14 @@ File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./isslogocolor.pdf>]
-
-! LaTeX Error: File `figures/patRec' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 \end{frame}
-                
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 74.
+(Font)              <5> on input line 75.
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
+Overfull \vbox (76.36656pt too high) detected at line 75
+ []
+
+
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -1678,63 +1668,21 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [2
 
 ]
-
-! LaTeX Error: File `figures/patternRecPipeline' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/class2D' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
+Overfull \vbox (76.36656pt too high) detected at line 75
+ []
+
+
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
 [3
 
-]
-
-! LaTeX Error: File `figures/class2D' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.114 \end{frame}
-                 
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 114.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 114.
+] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -1750,7 +1698,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [5
 
-] (./MAVortrag-ZhuoweiHan.toc)
+]
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1760,15 +1708,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [6
 
 ]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[7
-
-]
 
 ! LaTeX Error: File `figures/brain' not found.
 
@@ -1776,7 +1715,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \end{frame}
+l.126 \end{frame}
                  
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1789,22 +1728,27 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[7
+
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
 [8
 
 ]
-Overfull \hbox (21.47404pt too wide) in paragraph at lines 180--180
-[]  
- []
 
-
-! LaTeX Error: File `figures/timeLine' not found.
+! LaTeX Error: File `figures/dNN' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.180 \end{frame}
-                 
+l.184 	\end{frame}
+                  
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
 Try typing  <return>  to proceed.
@@ -1818,7 +1762,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [9
 
-] (./MAVortrag-ZhuoweiHan.toc)
+]
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1829,13 +1773,27 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/dNN' not found.
+! LaTeX Error: File `figures/gradDecay' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 	\end{frame}
+l.226 	\end{frame}
+                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figures/meanGradMag' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1850,7 +1808,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [11
 
-]
+] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1861,27 +1819,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/gradDecay' not found.
+! LaTeX Error: File `figures/layerTraining01' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.265 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/meanGradMag' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.265 	\end{frame}
+l.249 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1896,24 +1840,15 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [13
 
-] (./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[14
-
 ]
 
-! LaTeX Error: File `figures/layerTraining01' not found.
+! LaTeX Error: File `figures/layerTraining02' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.288 	\end{frame}
+l.286 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1926,17 +1861,26 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[14
+
+]
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
 [15
 
 ]
 
-! LaTeX Error: File `figures/layerTraining02' not found.
+! LaTeX Error: File `figures/layerTraining03' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.325 	\end{frame}
+l.339 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1952,23 +1896,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [16
 
 ]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
 
-[17
-
-]
-
-! LaTeX Error: File `figures/layerTraining03' not found.
+! LaTeX Error: File `figures/layerTraining04' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 	\end{frame}
+l.358 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -1981,17 +1916,31 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[17
+
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
 [18
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 389.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 389.
 
-! LaTeX Error: File `figures/layerTraining04' not found.
+
+! LaTeX Error: File `figures/compressionStructure' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.397 	\end{frame}
+l.389 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2006,9 +1955,37 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [19
 
-] (./MAVortrag-ZhuoweiHan.toc)
+]
+
+! LaTeX Error: File `figures/texture' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.406 	\end{frame}
+                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figures/textureRec' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.406 	\end{frame}
+                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
@@ -2017,13 +1994,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/compressionStructure' not found.
+! LaTeX Error: File `figures/extractedFeatures' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.428 	\end{frame}
+l.437 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2040,27 +2017,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/texture' not found.
+! LaTeX Error: File `figures/featuresMNIST' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.445 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/textureRec' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.445 	\end{frame}
+l.473 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2077,18 +2040,34 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/extractedFeatures' not found.
+! LaTeX Error: File `figures/digitPrototypes' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.476 	\end{frame}
+l.497 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.497 	\end{frame}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.497 	\end{frame}
+                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 File: isslogocolor.pdf Graphic file (type pdf)
 <use isslogocolor.pdf>
@@ -2100,13 +2079,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/featuresMNIST' not found.
+! LaTeX Error: File `figures/reconstructionStructure' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.512 	\end{frame}
+l.533 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2123,34 +2102,32 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/digitPrototypes' not found.
+! LaTeX Error: File `figures/distorted01' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.536 	\end{frame}
+l.555 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.536 	\end{frame}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.536 	\end{frame}
+! LaTeX Error: File `figures/reconstruction01' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.555 	\end{frame}
                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
 <use isslogocolor.pdf>
@@ -2162,13 +2139,27 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/reconstructionStructure' not found.
+! LaTeX Error: File `figures/distorted02' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.572 	\end{frame}
+l.577 	\end{frame}
+                  
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `figures/reconstruction02' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.577 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2185,27 +2176,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: File `figures/distorted01' not found.
+! LaTeX Error: File `figures/denoising' not found.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.594 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/reconstruction01' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.594 	\end{frame}
+l.589 	\end{frame}
                   
 I could not locate the file with any of these extensions:
 .png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
@@ -2220,66 +2197,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [27
 
-]
-
-! LaTeX Error: File `figures/distorted02' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.616 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `figures/reconstruction02' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.616 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[28
-
-]
-
-! LaTeX Error: File `figures/denoising' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.628 	\end{frame}
-                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[29
-
 ] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
@@ -2287,7 +2204,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[30
+[28
 
 ]
 File: isslogocolor.pdf Graphic file (type pdf)
@@ -2296,7 +2213,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[31
+[29
 
 ]
 \tf@nav=\write8
@@ -2318,13 +2235,13 @@ FiXme Summary: Number of notes: 0,
 
 (./MAVortrag-ZhuoweiHan.aux) ) 
 Here is how much of TeX's memory you used:
- 30037 strings out of 493848
- 637800 string characters out of 1152823
- 790325 words of memory out of 3000000
- 32273 multiletter control sequences out of 15000+50000
+ 30033 strings out of 493848
+ 637841 string characters out of 1152824
+ 790202 words of memory out of 3000000
+ 32275 multiletter control sequences out of 15000+50000
  118023 words of font info for 92 fonts, out of 3000000 for 9000
  725 hyphenation exceptions out of 8191
- 51i,16n,78p,1069b,685s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,16n,78p,1069b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/
 usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/
 lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
@@ -2340,9 +2257,9 @@ lic/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share
 /fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on MAVortrag-ZhuoweiHan.pdf (31 pages, 440808 bytes).
+Output written on MAVortrag-ZhuoweiHan.pdf (29 pages, 429526 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 724 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

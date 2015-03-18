@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="744.09448"
+   height="1052.3622"
+   id="svg2">
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2996" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="742.85712"
+       height="151.42857"
+       x="5.4495672e-07"
+       y="309.50504"
+       id="rect2985"
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="m 0.72871417,385.06895 0,-75 370.71428583,0 370.71429,0 0,75 0,75 -370.71429,0 -370.71428583,0 0,-75 z"
+       id="path2992"
+       style="fill:#f9f9f9;stroke:none" />
+    <path
+       d="m 526.51923,386.65332 c -0.37038,-40.23772 -0.94828,-73.8758 -1.28424,-74.75128 -0.55365,-1.44281 9.46776,-1.59179 107.0785,-1.59179 l 107.68932,0 0,74.75129 0,74.75129 -106.40508,0 -106.4051,0 -0.6734,-73.15951 z"
+       id="path3022"
+       style="fill:#cccccc" />
+    <path
+       d="m 526.28948,308.88991 c 1.33793,50.49585 2.01144,101.00931 2.0203,151.52288 1.2e-4,0.67344 1.2e-4,1.34687 0,2.02031"
+       id="path2994"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <flowRoot
+       transform="translate(66,8)"
+       id="flowRoot2998"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3000"><rect
+           width="328.29959"
+           height="73.741135"
+           x="104.04572"
+           y="344.24524"
+           id="rect3002" /></flowRegion><flowPara
+         id="flowPara3004">Training set</flowPara></flowRoot>    <flowRoot
+       transform="translate(20.12183,5.091368)"
+       id="flowRoot3006"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><flowRegion
+         id="flowRegion3008"><rect
+           width="174.75639"
+           height="54.548237"
+           x="541.44177"
+           y="356.36707"
+           id="rect3010" /></flowRegion><flowPara
+         id="flowPara3012">Test set</flowPara></flowRoot>  </g>
+</svg>
