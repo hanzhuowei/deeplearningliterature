@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  10 FEB 2015 11:13
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  25 MAR 2015 15:19
 entering extended mode
  %&-line parsing enabled.
 **lukas.tex
@@ -1393,8 +1393,24 @@ Package: beamerfontthemeserif 2010/06/17  (rcs-revision d02a7cf4d8ae)
 )
 \fullwidth=\skip77
 \fullheight=\skip78
+
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfpages.sty
+Package: pgfpages 2004/11/05 ver 0.01
+\pgf@logicalpages=\count195
+\pgf@firstshipout=\count196
+\pgf@lastshipout=\count197
+\pgf@currentshipout=\count198
+\pgf@cpn=\count199
+\pgf@shipoutnextto=\count200
+\pgfphysicalheight=\dimen267
+\pgfphysicalwidth=\dimen268
+\pgfpages@shipoutbox=\box83
 )
-(./lukas.aux)
+\pgfpages@box@1=\box84
+\pgfpages@box@2=\box85
+\pgfpages@box@3=\box86
+\pgfpages@box@4=\box87
+) (./lukas.aux)
 \openout1 = `lukas.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1413,7 +1429,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
- (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1465,15 +1482,15 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count195
-\scratchdimen=\dimen267
-\scratchbox=\box83
-\nofMPsegments=\count196
-\nofMParguments=\count197
+\scratchcounter=\count201
+\scratchdimen=\dimen269
+\scratchbox=\box88
+\nofMPsegments=\count202
+\nofMParguments=\count203
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count198
-\MPscratchDim=\dimen268
-\MPnumerator=\count199
+\MPscratchCnt=\count204
+\MPscratchDim=\dimen270
+\MPnumerator=\count205
 \everyMPtoPDFconversion=\toks58
 ) ABD: EveryShipout initializing macros
 Package hyperref Info: Link coloring OFF on input line 42.
@@ -1483,7 +1500,7 @@ LaTeX Info: Redefining \pageref on input line 42.
 \@outlinefile=\write7
 \openout7 = `lukas.out'.
 
-\AtBeginShipoutBox=\box84
+\AtBeginShipoutBox=\box89
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
@@ -1575,7 +1592,7 @@ LaTeX Info: Redefining \Ref on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count200
+\c@lstlisting=\count206
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/lmss/m/n --> TS1/lmss/bx/n on input line 42.
@@ -1649,10 +1666,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmss on input line 50.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [1
-Non-PDF special ignored!
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./isslogocolor.pdf>]
+)
 
 ! LaTeX Error: File `figures/patRec' not found.
 
@@ -1675,9 +1689,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[2
-
-]
 
 ! LaTeX Error: File `figures/patternRecPipeline' not found.
 
@@ -1706,15 +1717,6 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[3
-
-]
 
 ! LaTeX Error: File `figures/class2D' not found.
 
@@ -1739,36 +1741,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[4
-
-] (./lukas.toc)
+(./lukas.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[5
-
-] (./lukas.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[6
-
-]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[7
-
-]
+(./lukas.toc)
 
 ! LaTeX Error: File `figures/brain' not found.
 
@@ -1784,14 +1764,19 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+<use isslogocolor.pdf> [5
+Non-PDF special ignored!
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+ <./isslogocolor.pdf>]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[8
 
-]
 Overfull \hbox (21.47404pt too wide) in paragraph at lines 180--180
 []  
  []
@@ -1816,18 +1801,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[9
-
-] (./lukas.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[10
-
-]
+(./lukas.toc)
 
 ! LaTeX Error: File `figures/dNN' not found.
 
@@ -1848,18 +1822,12 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[11
-
-]
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[12
-
-]
 
 ! LaTeX Error: File `figures/gradDecay' not found.
 
@@ -1889,23 +1857,17 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
+<use isslogocolor.pdf> [9
 
-[13
 
-] (./lukas.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
 
-[14
 
 ]
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+(./lukas.toc)
 
 ! LaTeX Error: File `figures/layerTraining01' not found.
 
@@ -1926,9 +1888,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[15
-
-]
 
 ! LaTeX Error: File `figures/layerTraining02' not found.
 
@@ -1949,18 +1908,12 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[16
-
-]
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[17
-
-]
 
 ! LaTeX Error: File `figures/layerTraining03' not found.
 
@@ -1976,14 +1929,16 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+<use isslogocolor.pdf> [13
+
+
+
+
+]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[18
-
-]
 
 ! LaTeX Error: File `figures/layerTraining04' not found.
 
@@ -2004,18 +1959,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[19
-
-] (./lukas.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[20
-
-]
+(./lukas.toc)
 
 ! LaTeX Error: File `figures/compressionStructure' not found.
 
@@ -2036,9 +1980,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[21
-
-]
 
 ! LaTeX Error: File `figures/texture' not found.
 
@@ -2073,9 +2014,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[22
-
-]
 
 ! LaTeX Error: File `figures/extractedFeatures' not found.
 
@@ -2091,14 +2029,16 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+<use isslogocolor.pdf> [17
+
+
+
+
+]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[23
-
-]
 
 ! LaTeX Error: File `figures/featuresMNIST' not found.
 
@@ -2119,9 +2059,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[24
-
-]
 
 ! LaTeX Error: File `figures/digitPrototypes' not found.
 
@@ -2142,9 +2079,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[25
-
-]
 
 ! LaTeX Error: File `figures/reconstructionStructure' not found.
 
@@ -2165,9 +2099,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[26
-
-]
 
 ! LaTeX Error: File `figures/distorted01' not found.
 
@@ -2197,14 +2128,16 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
+<use isslogocolor.pdf> [21
+
+
+
+
+]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[27
-
-]
 
 ! LaTeX Error: File `figures/distorted02' not found.
 
@@ -2239,9 +2172,6 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[28
-
-]
 
 ! LaTeX Error: File `figures/denoising' not found.
 
@@ -2262,27 +2192,13 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[29
-
-] (./lukas.toc)
+(./lukas.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[30
-
-]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[31
-
-]
 \tf@nav=\write8
 \openout8 = `lukas.nav'.
 
@@ -2293,40 +2209,71 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 \openout10 = `lukas.snm'.
 
 
-
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-(./lukas.aux) ) 
+[25
+
+
+
+
+] (./lukas.aux) ) 
 Here is how much of TeX's memory you used:
- 30037 strings out of 493848
- 637395 string characters out of 1152823
- 790310 words of memory out of 3000000
- 32273 multiletter control sequences out of 15000+50000
+ 30223 strings out of 493848
+ 642473 string characters out of 1152823
+ 841964 words of memory out of 3000000
+ 32461 multiletter control sequences out of 15000+50000
  118023 words of font info for 92 fonts, out of 3000000 for 9000
  725 hyphenation exceptions out of 8191
- 51i,16n,78p,1054b,685s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf
-/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.en
-c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/symbols/msam7.pfb>
-Output written on lukas.pdf (31 pages, 440244 bytes).
+ 51i,16n,78p,1054b,683s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Navigation25} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation29} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation30} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation26} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.3.26} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.2.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.1.21} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.2.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.1.11} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/t
+exmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
+athex.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/symbols/msam7.pfb>
+Output written on lukas.pdf (6 pages, 382775 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 

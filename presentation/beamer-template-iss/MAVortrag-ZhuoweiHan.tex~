@@ -28,14 +28,21 @@
 %\newcommand{\lang}{german}
 
 % Uncomment the following line, if you want to create handouts (setting to false does not work!)
-%\newcommand{\handoutmode}{true}
+% \newcommand{\handoutmode}{true}
 
 % Load beamer class using LSS style
 \input{presentation}
 
 \usepackage{setspace}
 \usepackage{graphicx}
+\usepackage{pgfpages}
 \graphicspath{ {../Fig/} }
+% \setbeameroption{show notes on second screen=left}
+% \setbeameroption{second mode text on second screen=left}
+% \setbeameroption{show notes}
+% \setbeameroption{show notes on second screen=left}
+
+
 % My commands:
 
 % -----------------------------------------------------------------------------
@@ -60,6 +67,7 @@
 	\begin{itemize}
 % 		\itemsep40pt
 		\item Most current work focuses on speech processing based on linguistic information,  e.g.: Skype Translator
+		
 		\item More natural human-machine interaction requires paralinguistic information such as age, gender, emotion.
 		\item Speech Recognition / Speeker Identification / Emotion Recognition
 		\begin{minipage}[h]{0.48\linewidth}
@@ -107,16 +115,30 @@
 %% =========
 \section{Foundations} %2 folies
 % -----------------------------------------------------------------------------
-\begin{frame}[t]{Mel Frequency Cepstral Features}
-\begin{itemize}
- \item short-term power spectrum 
- \item mel-scale approximate human perception
- \item widely-used in speech recognition tasks
-\end{itemize}
+\subsection{Mel Frequency Cepstral Features}
+	\begin{frame}[t]{Mel Frequency Cepstral Features}
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{itemize}
+				\item short-term power spectrum 
+				\item mel-scale approximate human perception
+				\item widely-used in speech recognition tasks
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{figure}
+			Transformation between Mel and Hertz scale
+				\begin{eqnarray}
+				f_{mel} = 1125~\ln~(1+f_{Hz}/700)\\
+				f_{Hz} = 700 \left(\exp(f_{mel}/1125)-1\right)
+				\end{eqnarray}
 
-	
+			\end{figure}
 
-\end{frame}
+		\end{minipage}
+	\end{frame}
+
+
+\subsection{Emotion Recognition Approaches}
 
 \begin{frame}[t]{Emotion Recognition Approaches}
 	\begin{minipage}[t]{0.48\linewidth}
@@ -142,6 +164,13 @@
 \end{frame}
 
 
+\section{Conditional Restricted Boltzmann Machine}
+	\subsection{Concept}
+		\begin{minipage}{0.48\linewidth}
+		 
+		\end{minipage}
+
+  
 %% =========
 \section{Deep Neural Networks}%4 folies
 	\subsection{Concept}		
@@ -200,8 +229,74 @@ N_l\uparrow$)
 			\begin{itemize}
 				\item Layerwise Pre-training
 			\end{itemize}
-		\end{minipage}
+		\end{minipage}\hfill
+		\begin{minipage}[h]{0.48\linewidth}
+			\begin{itemize}
+				\item Layerwise Pre-training
+			\end{itemize}
+		\end{minipage}		
 	\end{frame}
+
+\section{Long Short Term Memory}
+	\subsection{Recurrent Neural Network}
+		\begin{frame}[t]{Recurrent Neural Network}
+% 			\begin{minipage}[t][][t]{0.48\linewidth}
+			\textcolor{blue}{\Large Concepts of RNN}
+			\pause
+				\begin{itemize}[<+->]
+% 				 \itemsep10pt
+				 \item Same Structure as MLP but differs from feed-forward network, enabling
+nonlinear mapping.		\note<2>{tell me a story.}
+				 \begin{figure}
+					\begin{eqnarray}
+						&h_{t} = \mathcal{H}(W_{xh}x_{t}+W_{hh}h_{t-1} + b_{h})\nonumber\\
+						&y_{t} = W_{hy}h_{t} + b_{y}\nonumber
+					\end{eqnarray}
+
+				 \end{figure}
+
+				 \item Feedback connection between previous hidden units and current hidden units, enabling
+memory past hidden state.
+				 \item Potentially to model arbitary dynamic system.
+				 \item Trained with \textbf{b}ack\textbf{p}ropagation \textbf{t}hrough \textbf{t}ime (BPTT)
+				\end{itemize}
+% 			\end{minipage}
+\vspace{5mm}
+% 		\only<1>{\begin{figure}
+% 		          \includegraphics[width=0.5\textwidth]{NeuralNetwork.png}
+% 		         \end{figure}
+% 
+% 		}
+		\end{frame}
+		
+		\begin{frame}[t]{Recurrent Neural Network}
+% 			\begin{minipage}[t][][t]{0.48\linewidth}
+			\textcolor{blue}{\Large Concepts of RNN}
+			\begin{minipage}[t]{0.48\linewidth}
+				\only<1>{
+				\begin{figure}[t]
+				\includegraphics[width=0.8\textwidth]{RNNunit.png}
+				\end{figure}
+				}
+			\end{minipage}\hfill
+			\begin{minipage}[t]{0.48\linewidth}
+				\only<1>{
+				\begin{figure}[t]
+				\includegraphics[width=\textwidth]{RNNStruct.png}
+				\end{figure}
+				}
+			\end{minipage}
+
+		\end{frame}
+		
+		\begin{frame}[t]{Long short term memory}
+		\textcolor{blue}{}
+			\begin{itemize}[<+->]
+			 \item gradient vanishing during backpropagation as time steps increases (>100)
+			 \item difficult to 
+			\end{itemize}
+
+		\end{frame}
 
 
 \end{document}
