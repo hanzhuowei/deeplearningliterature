@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  25 MAR 2015 15:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  26 MAR 2015 17:45
 entering extended mode
  %&-line parsing enabled.
 **MAVortrag-ZhuoweiHan.tex
@@ -1406,9 +1406,6 @@ Package: pgfpages 2004/11/05 ver 0.01
 \pgfphysicalwidth=\dimen268
 \pgfpages@shipoutbox=\box83
 )
-\pgfpages@box@1=\box84
-\pgfpages@box@2=\box85
-
 (./MAVortrag-ZhuoweiHan.aux)
 \openout1 = `MAVortrag-ZhuoweiHan.aux'.
 
@@ -1481,7 +1478,7 @@ driver: pdftex
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count201
 \scratchdimen=\dimen269
-\scratchbox=\box86
+\scratchbox=\box84
 \nofMPsegments=\count202
 \nofMParguments=\count203
 \everyMPshowfont=\toks57
@@ -1498,7 +1495,7 @@ LaTeX Info: Redefining \pageref on input line 50.
 \@outlinefile=\write7
 \openout7 = `MAVortrag-ZhuoweiHan.out'.
 
-\AtBeginShipoutBox=\box87
+\AtBeginShipoutBox=\box85
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
@@ -1610,7 +1607,7 @@ Overfull \hbox (2.12502pt too wide) in paragraph at lines 50--50
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-<isslogocolor.pdf, id=67, 312.97928pt x 241.84352pt>
+<isslogocolor.pdf, id=75, 312.97928pt x 241.84352pt>
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 58.
@@ -1664,230 +1661,296 @@ LaTeX Font Info:    Try loading font information for TS1+lmss on input line 58.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 87.
-
-<../Fig/paraliguistic.png, id=80, 674.52pt x 280.04625pt>
-File: ../Fig/paraliguistic.png Graphic file (type png)
-
-<use ../Fig/paraliguistic.png>
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [2
+) [1
 Non-PDF special ignored!
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
- <./isslogocolor.pdf>]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./isslogocolor.pdf>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 87.
+ <../Fig/paraliguistic.png, id=100, 674.52pt x 280.04625pt>
 File: ../Fig/paraliguistic.png Graphic file (type png)
+
 <use ../Fig/paraliguistic.png>
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [3
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
 
+[2
 
  <../Fig/paraliguistic.png>]
+File: ../Fig/paraliguistic.png Graphic file (type png)
+ <use ../Fig/paraliguistic.png>
+File: isslogocolor.pdf Graphic file (type pdf)
+
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-(./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [4
+[3
 
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[4
+
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[5
 
 ]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-(./MAVortrag-ZhuoweiHan.toc)
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [5
-
-
-]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-
-Overfull \hbox (10.94432pt too wide) in alignment at lines 138--138
+Overfull \hbox (24.05495pt too wide) in alignment at lines 141--141
  [][][] []
  []
 
+<../Fig/MelvsHz.png, id=205, 578.16pt x 433.62pt>
+File: ../Fig/MelvsHz.png Graphic file (type png)
+ <use ../Fig/MelvsHz.png>
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [6
 
-
-]
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[6
+
+ <../Fig/MelvsHz.png>]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [7
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-(./MAVortrag-ZhuoweiHan.toc)
+[7
+
+] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [8
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-(./MAVortrag-ZhuoweiHan.toc)
+[8
+
+]
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[9
+
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[10
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
 
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[11
 
 ]
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-
-Overfull \vbox (12.0pt too high) has occurred while \output is active []
-
- [10
-
-
-]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
+[12]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[12
-
+[13
 
 ]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [13
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[14
+
+] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [14
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-(./MAVortrag-ZhuoweiHan.toc)
+[15
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [15
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[16
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [16
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[17
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [17
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[18
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [18
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[19
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [19
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[20
+
+]
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [20
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-<../Fig/RNNunit.png, id=622, 705.63625pt x 572.1375pt>
+[21
+
+] <../Fig/RNNunit.png, id=524, 705.63625pt x 572.1375pt>
 File: ../Fig/RNNunit.png Graphic file (type png)
 
 <use ../Fig/RNNunit.png>
-<../Fig/RNNStruct.png, id=623, 777.90625pt x 489.83pt>
+<../Fig/RNNStruct.png, id=525, 777.90625pt x 489.83pt>
 File: ../Fig/RNNStruct.png Graphic file (type png)
 
 <use ../Fig/RNNStruct.png>
 File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf> [21
-
-
-]
+ <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
+ []
+
+[22
+
+ <../Fig/RNNunit.png> <../Fig/RNNStruct.png>]
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[23
+
+] <../Fig/LSTMstruct.png, id=562, 828.09375pt x 602.25pt>
+File: ../Fig/LSTMstruct.png Graphic file (type png)
+
+<use ../Fig/LSTMstruct.png>
+Overfull \hbox (45.21161pt too wide) in alignment at lines 347--347
+ [][][] []
  []
 
 File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf> [22
-
-
- <../Fig/RNNunit.png> <../Fig/RNNStruct.png>]
+<use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
+[24
+
+ <../Fig/LSTMstruct.png (PNG copy)>]
+File: ../Fig/LSTMstruct.png Graphic file (type png)
+ <use ../Fig/LSTMstruct.png>
+Overfull \hbox (45.21161pt too wide) in alignment at lines 347--347
+ [][][] []
+ []
+
+File: isslogocolor.pdf Graphic file (type pdf)
+<use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[25
+
+] <../Fig/LSTMGra.png, id=597, 1697.34125pt x 909.3975pt>
+File: ../Fig/LSTMGra.png Graphic file (type png)
+
+<use ../Fig/LSTMGra.png>
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \vbox (13.64809pt too high) detected at line 361
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[26
+
+ <../Fig/LSTMGra.png>] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[27
+
+] (./MAVortrag-ZhuoweiHan.toc)
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[28
+
+]
 \tf@nav=\write8
 \openout8 = `MAVortrag-ZhuoweiHan.nav'.
 
@@ -1898,42 +1961,40 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 \openout10 = `MAVortrag-ZhuoweiHan.snm'.
 
 
+
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-[23
-
-
-] (./MAVortrag-ZhuoweiHan.aux) ) 
+(./MAVortrag-ZhuoweiHan.aux) ) 
 Here is how much of TeX's memory you used:
- 30074 strings out of 493848
- 641138 string characters out of 1152823
- 812145 words of memory out of 3000000
- 32364 multiletter control sequences out of 15000+50000
- 90575 words of font info for 71 fonts, out of 3000000 for 9000
+ 30065 strings out of 493848
+ 640463 string characters out of 1152823
+ 797314 words of memory out of 3000000
+ 32335 multiletter control sequences out of 15000+50000
+ 85028 words of font info for 69 fonts, out of 3000000 for 9000
  725 hyphenation exceptions out of 8191
  51i,16n,78p,1069b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.
-enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr
-/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmm
-i10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on MAVortrag-ZhuoweiHan.pdf (22 pages, 463833 bytes).
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.en
+c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
+/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/l
+msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7.pf
+b>
+Output written on MAVortrag-ZhuoweiHan.pdf (28 pages, 546860 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 745 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -122,18 +122,21 @@
 				\item short-term power spectrum 
 				\item mel-scale approximate human perception
 				\item widely-used in speech recognition tasks
-			\end{itemize}
-		\end{minipage}
-		\begin{minipage}[t]{0.48\linewidth}
-			\begin{figure}
-			Transformation between Mel and Hertz scale
+				\item Transformation between Mel and Hertz scale
+				\begin{figure}
+
 				\begin{eqnarray}
 				f_{mel} = 1125~\ln~(1+f_{Hz}/700)\\
 				f_{Hz} = 700 \left(\exp(f_{mel}/1125)-1\right)
 				\end{eqnarray}
 
 			\end{figure}
-
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.48\linewidth}
+		\begin{figure}
+		 \includegraphics[width = \linewidth]{MelvsHz.png}
+		\end{figure}
 		\end{minipage}
 	\end{frame}
 
@@ -149,14 +152,14 @@
 	   \item low-level features not appropriate for claasification
 	   \item shallow structure of classifiers
 	  \end{itemize}
-	\end{minipage}
+	\end{minipage}\hfill
 	\begin{minipage}[t]{0.48\linewidth}
 	\textcolor{blue}{\Large Deep Learning Approaches}
 	  \begin{itemize}
 	   \item learning representations from high-dim data
 	   \item extracting appropriate features without hand-crafting
 	   \item low-level features are used to build high-level features as network gets deeper
-	   \item 
+	   \item frame-based classfication
 	  \end{itemize}
 
 	\end{minipage}
@@ -166,9 +169,14 @@
 
 \section{Conditional Restricted Boltzmann Machine}
 	\subsection{Concept}
-		\begin{minipage}{0.48\linewidth}
-		 
-		\end{minipage}
+	\begin{frame}{Restricted BM}
+	 \begin{itemize}
+	  \item undirected graphical probablistic model based on PoE, capable in modeling high-dimensioanl data (speech emotion)
+	  \item speicifies a joint distribution 
+	 \end{itemize}
+
+	\end{frame}
+
 
   
 %% =========
@@ -245,20 +253,23 @@ N_l\uparrow$)
 			\pause
 				\begin{itemize}[<+->]
 % 				 \itemsep10pt
+				 \item modelling sequential data, emotion in speech .
 				 \item Same Structure as MLP but differs from feed-forward network, enabling
 nonlinear mapping.		\note<2>{tell me a story.}
-				 \begin{figure}
+				 \only<3>{\begin{figure}
 					\begin{eqnarray}
 						&h_{t} = \mathcal{H}(W_{xh}x_{t}+W_{hh}h_{t-1} + b_{h})\nonumber\\
 						&y_{t} = W_{hy}h_{t} + b_{y}\nonumber
 					\end{eqnarray}
 
 				 \end{figure}
-
+				 }
+				
 				 \item Feedback connection between previous hidden units and current hidden units, enabling
 memory past hidden state.
 				 \item Potentially to model arbitary dynamic system.
 				 \item Trained with \textbf{b}ack\textbf{p}ropagation \textbf{t}hrough \textbf{t}ime (BPTT)
+				 \note{natural extension of BP in FF network}
 				\end{itemize}
 % 			\end{minipage}
 \vspace{5mm}
@@ -289,12 +300,60 @@ memory past hidden state.
 
 		\end{frame}
 		
-		\begin{frame}[t]{Long short term memory}
-			\begin{itemize}[<+->]
+		\begin{frame}[t]{From RNN to LSTM}
+		\textcolor{blue}{\Large Problems with RNN}
+			\begin{itemize}%[<+->]
+			 \item gradient vanishing during backpropagation as time steps increases (>100)
+			 \item difficult to capture long-time dependency (which is required in emotion recognition)
+			\end{itemize}
+		\textcolor{red}{\Large Solutions}	
+			\begin{itemize}
 			 \item 
 			\end{itemize}
+    
+    
+		\end{frame}
+		\begin{frame}{Long short term memory}
+		\only<1>{S. Hochreiter and J. Schmidhuber, Lovol. 9, pp. 1735-1780, 1997.}
+		\uncover<2->{
+		\textcolor{blue}{\Large LSTM unit}\\
+		\begin{minipage}{0.4\linewidth}
+			\begin{figure}
+			 \includegraphics[width=\linewidth]{LSTMstruct.png}
+			\end{figure}
+		\end{minipage}
+		\begin{minipage}[t]{0.55\linewidth}
+			\begin{figure}
+			 \begin{eqnarray}
+				  i_{t} &=& \sigma (W_{xi}x_{t} + W_{hi}h_{t-1} + W_{ci}c_{t-1} +b_{i})\nonumber\\
+				  f_{t} &=& \sigma (W_{xf}x_{t} + W_{hf}h_{t-1} + W_{cf}c_{t-1} +b_{f})\nonumber\\
+				  c_{t} &=& f_{t}c_{t-1} + i_{t}\mathrm{tanh}(W_{xc}x_{t} + W_{hc}h_{t-1} + b_{c})\nonumber\\
+				  o_{t} &=& \sigma (W_{xo}x_{t} + W_{ho}h_{t-1} + W_{co}c_{t} +b_{o})\nonumber\\
+				  h_{t} &=& o_{t}\mathrm{tanh} (c_{t})\nonumber
+			 \end{eqnarray}
+			\end{figure}
+		\end{minipage}
+
+		}
+		\end{frame}
+		
+		\begin{frame}{Long short term memory}
+		\textcolor{blue}{\Large Features in LSTM}
+		 \begin{itemize}
+		  \item gates are trained to learn when it shoud be open/closed. 
+		  \item Constant Error Carousel
+		  \item preserve long-time dependency by maintaining gradient over time. 
+		 \end{itemize}
+		 \begin{figure}
+		  \includegraphics[width=\textwidth]{LSTMGra.png}
+		 \end{figure}
+
 
 		\end{frame}
+
+\section{Experiments}
+
+\section{Conclusion and Outlook}
 
 
 \end{document}
