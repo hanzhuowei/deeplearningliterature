@@ -12,6 +12,16 @@
 \newcommand{\presenter}{Zhuowei Han}
 \newcommand{\presentershort}{Z.Han}
 \newcommand{\presenteremail}{} 		% can be accessed using \presenteremail
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\mX}{\mathbf{X}}
+\newcommand{\mH}{\mathbf{H}}
+\newcommand{\h}{\mathbf{h}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\W}{\mathbf{W}}
+\newcommand{\vb}{\mathbf{b}}
+\newcommand{\vc}{\mathbf{c}}
+\newcommand{\txtcolb}[1]{\textcolor{blue}{\Large #1}}
 
 % Insert presentation title here
 \newcommand{\presentationtitle}{Deep Neural Network for Speech Emotion Recognition}
@@ -168,13 +178,64 @@
 
 
 \section{Conditional Restricted Boltzmann Machine}
-	\subsection{Concept}
-	\begin{frame}{Restricted BM}
+	\subsection{Restricted Boltzmann Machine}
+	\begin{frame}[t]{Character}
+% 	\txtcolb{}
 	 \begin{itemize}
-	  \item undirected graphical probablistic model based on PoE, capable in modeling high-dimensioanl data (speech emotion)
-	  \item speicifies a joint distribution 
+	  \item Generative model 
+	  \item Undirected graphical model, good at modeling high-dimensioanl data (speech emotion)
+	  \item Trained in unsupervised way, only use unlabeled input sequence$\x$ for learning. \note{clustering, mixture models,PoE}
+		  \begin{itemize}
+		   \item automatically extract useful features from data 
+		   \item Find hidden structure (distribution). 
+		   \item Learned features used for prediction or classification
+		  \end{itemize}
+% 	  \item speicifies a joint distribution over input and hidden variables, can either generating data, or with bayesian
+% rule to form conditional distribution. 
+	  \item Potential to be extend to capture temporal information.
 	 \end{itemize}
 
+
+	
+% 	\begin{minipage}[t]{\linewidth}
+% 	 $\x$, input units\\
+% 	 $\h$, hidden units
+% 	\end{minipage}
+
+	\end{frame}
+	\begin{frame}{}
+	    \begin{figure}[t]
+	    \includegraphics[width=0.5\linewidth]{RBMStruct.png}
+	    \end{figure}
+	    \begin{minipage}{0.48\linewidth}
+	    \begin{align}
+	      \text{Energy Function:}~&E_{\boldsymbol{\theta}} = -\mathbf{x^{T}}\mathbf{W}\mathbf{h}-\mathbf{b^{T}}\mathbf{x}-\mathbf{c^{T}}\mathbf{h}\nonumber\\
+	    \text{Joint Distribution:}~&P^{RBM} (\mathbf{x},\mathbf{h}) = \frac{1}{Z} e^{-E_{\boldsymbol{\theta}}(\mathbf{x},\mathbf{h})}\nonumber\\
+	     \text{Partition Function:}~ &Z = \sum_{\mathbf{x,h}} e^{-E_{\boldsymbol{\theta}}(\mathbf{x},\mathbf{h})}\nonumber
+	    \end{align}
+	    \end{minipage}
+	    
+	\end{frame}
+
+	\begin{frame}
+	\txtcolb{Inference}
+		\begin{minipage}[t]{0.48\linewidth}
+		\begin{figure}[t]
+			 \begin{align}
+			 &P(h_{j}=1 \mid \mathbf{x})= sigmoid(\sum_{i} x_{i}W_{ij} + c_{j})\nonumber\\
+			 &P(x_{i}=1 \mid \mathbf{h}) = sigmoid(\sum_{j} W_{ij} h_{j} + b_{i})\nonumber
+			 \end{align}
+		\end{figure}
+	\end{minipage}
+% 	\begin{minipage}{0.48\linewidth}
+% 	$\x$ input units
+% 	$\h$ hidden units
+% 	$W$  weight connections
+% 	\end{minipage}
+
+
+	\vspace{5mm}
+	 
 	\end{frame}
 
 

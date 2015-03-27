@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.8.30)  26 MAR 2015 17:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.9.3)  27 MAR 2015 00:55
 entering extended mode
  %&-line parsing enabled.
 **MAVortrag-ZhuoweiHan.tex
@@ -1409,27 +1409,27 @@ Package: pgfpages 2004/11/05 ver 0.01
 (./MAVortrag-ZhuoweiHan.aux)
 \openout1 = `MAVortrag-ZhuoweiHan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 60.
  (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 50.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 60.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1487,9 +1487,9 @@ driver: pdftex
 \MPnumerator=\count205
 \everyMPtoPDFconversion=\toks58
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 50.
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
+Package hyperref Info: Link coloring OFF on input line 60.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
  (./MAVortrag-ZhuoweiHan.out)
 (./MAVortrag-ZhuoweiHan.out)
 \@outlinefile=\write7
@@ -1499,41 +1499,41 @@ LaTeX Info: Redefining \pageref on input line 50.
 \symnumbers=\mathgroup8
 \sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 50.
+(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 50.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 50.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 50.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 50.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 50.
+(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 50.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 50.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 50.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 50.
+(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 50.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 50.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 50.
+(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 50.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 50.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 50.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 60.
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
 onary/translator-basic-dictionary-English.dict
@@ -1583,24 +1583,24 @@ Dictionary: translator-theorem-dictionary, Language: English
 tionary/translator-theorem-dictionary-German.dict
 Dictionary: translator-theorem-dictionary, Language: German 
 )
-LaTeX Info: Redefining \Ref on input line 50.
+LaTeX Info: Redefining \Ref on input line 60.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count206
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmss/m/n --> TS1/lmss/bx/n on input line 50.
-Package gensymb Info: Math companion symbols declared on input line 50.
-LaTeX Info: Redefining \degree on input line 50.
-LaTeX Info: Redefining \celsius on input line 50.
+(Font)                  TS1/lmss/m/n --> TS1/lmss/bx/n on input line 60.
+Package gensymb Info: Math companion symbols declared on input line 60.
+LaTeX Info: Redefining \degree on input line 60.
+LaTeX Info: Redefining \celsius on input line 60.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 50.
-LaTeX Info: Redefining \ohm on input line 50.
-Package gensymb Info: Using \textohm for \ohm on input line 50.
-Package gensymb Info: Using \textmu for \micro on input line 50.
+erthousand on input line 60.
+LaTeX Info: Redefining \ohm on input line 60.
+Package gensymb Info: Using \textohm for \ohm on input line 60.
+Package gensymb Info: Using \textmu for \micro on input line 60.
  (./MAVortrag-ZhuoweiHan.nav)
-Overfull \hbox (2.12502pt too wide) in paragraph at lines 50--50
+Overfull \hbox (2.12502pt too wide) in paragraph at lines 60--60
 [] 
  []
 
@@ -1610,53 +1610,53 @@ File: lstlang1.sty 2004/09/05 1.3 listings language file
 <isslogocolor.pdf, id=75, 312.97928pt x 241.84352pt>
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 58.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 58.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 68.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 58.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 68.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 58.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 68.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 58.
+(Font)              <10.95> on input line 68.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 58.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 58.
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+(Font)              <6> on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+bbold on input line 58.
+LaTeX Font Info:    Try loading font information for U+bbold on input line 68.
 
 (/usr/share/texmf-texlive/tex/latex/bbold/Ubbold.fd)
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 58.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 68.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 58.
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 68.
 
 
 (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
@@ -1666,7 +1666,7 @@ Non-PDF special ignored!
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./isslogocolor.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 87.
+(Font)              <5> on input line 97.
  <../Fig/paraliguistic.png, id=100, 674.52pt x 280.04625pt>
 File: ../Fig/paraliguistic.png Graphic file (type png)
 
@@ -1710,7 +1710,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 [5
 
 ]
-Overfull \hbox (24.05495pt too wide) in alignment at lines 141--141
+Overfull \hbox (24.05495pt too wide) in alignment at lines 151--151
  [][][] []
  []
 
@@ -1753,6 +1753,34 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [9
 
+] <../Fig/RBMStruct.png, id=293, 776.9025pt x 266.9975pt>
+File: ../Fig/RBMStruct.png Graphic file (type png)
+
+<use ../Fig/RBMStruct.png>
+Overfull \hbox (73.60504pt too wide) in paragraph at lines 218--218
+[] 
+ []
+
+File: isslogocolor.pdf Graphic file (type pdf)
+<use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[10
+
+ <../Fig/RBMStruct.png>]
+Overfull \hbox (33.27016pt too wide) in paragraph at lines 239--239
+ [] 
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[11
+
 ] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
@@ -1760,7 +1788,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[10
+[12
 
 ]
 File: isslogocolor.pdf Graphic file (type pdf)
@@ -1772,32 +1800,14 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[11
-
-]
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[12]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
 [13
 
 ]
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[14
-
-] (./MAVortrag-ZhuoweiHan.toc)
+[14]
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1815,7 +1825,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [16
 
-]
+] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
  <use isslogocolor.pdf>
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
@@ -1860,11 +1870,29 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 
 [21
 
-] <../Fig/RNNunit.png, id=524, 705.63625pt x 572.1375pt>
+]
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[22
+
+]
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[23
+
+] <../Fig/RNNunit.png, id=562, 705.63625pt x 572.1375pt>
 File: ../Fig/RNNunit.png Graphic file (type png)
 
 <use ../Fig/RNNunit.png>
-<../Fig/RNNStruct.png, id=525, 777.90625pt x 489.83pt>
+<../Fig/RNNStruct.png, id=563, 777.90625pt x 489.83pt>
 File: ../Fig/RNNStruct.png Graphic file (type png)
 
 <use ../Fig/RNNStruct.png>
@@ -1874,7 +1902,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[22
+[24
 
  <../Fig/RNNunit.png> <../Fig/RNNStruct.png>]
 File: isslogocolor.pdf Graphic file (type pdf)
@@ -1883,54 +1911,54 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[23
+[25
 
-] <../Fig/LSTMstruct.png, id=562, 828.09375pt x 602.25pt>
+] <../Fig/LSTMstruct.png, id=601, 828.09375pt x 602.25pt>
 File: ../Fig/LSTMstruct.png Graphic file (type png)
 
 <use ../Fig/LSTMstruct.png>
-Overfull \hbox (45.21161pt too wide) in alignment at lines 347--347
+Overfull \hbox (45.21161pt too wide) in alignment at lines 399--399
  [][][] []
  []
 
 File: isslogocolor.pdf Graphic file (type pdf)
 <use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[24
-
- <../Fig/LSTMstruct.png (PNG copy)>]
-File: ../Fig/LSTMstruct.png Graphic file (type png)
- <use ../Fig/LSTMstruct.png>
-Overfull \hbox (45.21161pt too wide) in alignment at lines 347--347
- [][][] []
- []
-
-File: isslogocolor.pdf Graphic file (type pdf)
-<use isslogocolor.pdf>
-Overfull \hbox (2.12502pt too wide) has occurred while \output is active
-[]
- []
-
-[25
-
-] <../Fig/LSTMGra.png, id=597, 1697.34125pt x 909.3975pt>
-File: ../Fig/LSTMGra.png Graphic file (type png)
-
-<use ../Fig/LSTMGra.png>
-File: isslogocolor.pdf Graphic file (type pdf)
- <use isslogocolor.pdf>
-Overfull \vbox (13.64809pt too high) detected at line 361
- []
-
-
 Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
 [26
+
+ <../Fig/LSTMstruct.png (PNG copy)>]
+File: ../Fig/LSTMstruct.png Graphic file (type png)
+ <use ../Fig/LSTMstruct.png>
+Overfull \hbox (45.21161pt too wide) in alignment at lines 399--399
+ [][][] []
+ []
+
+File: isslogocolor.pdf Graphic file (type pdf)
+<use isslogocolor.pdf>
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[27
+
+] <../Fig/LSTMGra.png, id=635, 1697.34125pt x 909.3975pt>
+File: ../Fig/LSTMGra.png Graphic file (type png)
+
+<use ../Fig/LSTMGra.png>
+File: isslogocolor.pdf Graphic file (type pdf)
+ <use isslogocolor.pdf>
+Overfull \vbox (13.64809pt too high) detected at line 413
+ []
+
+
+Overfull \hbox (2.12502pt too wide) has occurred while \output is active
+[]
+ []
+
+[28
 
  <../Fig/LSTMGra.png>] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
@@ -1939,7 +1967,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[27
+[29
 
 ] (./MAVortrag-ZhuoweiHan.toc)
 File: isslogocolor.pdf Graphic file (type pdf)
@@ -1948,7 +1976,7 @@ Overfull \hbox (2.12502pt too wide) has occurred while \output is active
 []
  []
 
-[28
+[30
 
 ]
 \tf@nav=\write8
@@ -1970,31 +1998,32 @@ FiXme Summary: Number of notes: 0,
 
 (./MAVortrag-ZhuoweiHan.aux) ) 
 Here is how much of TeX's memory you used:
- 30065 strings out of 493848
- 640463 string characters out of 1152823
- 797314 words of memory out of 3000000
- 32335 multiletter control sequences out of 15000+50000
- 85028 words of font info for 69 fonts, out of 3000000 for 9000
+ 30144 strings out of 493848
+ 642013 string characters out of 1152824
+ 797551 words of memory out of 3000000
+ 32398 multiletter control sequences out of 15000+50000
+ 113375 words of font info for 88 fonts, out of 3000000 for 9000
  725 hyphenation exceptions out of 8191
- 51i,16n,78p,1069b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.en
-c}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm
+ 51i,17n,78p,1069b,686s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/
+usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/l
-msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam7.pf
-b>
-Output written on MAVortrag-ZhuoweiHan.pdf (28 pages, 546860 bytes).
+/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib7.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type
+1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/symbols/msam7.pfb>
+Output written on MAVortrag-ZhuoweiHan.pdf (30 pages, 592924 bytes).
 PDF statistics:
- 745 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 260 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 789 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
