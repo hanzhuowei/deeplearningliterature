@@ -178,7 +178,7 @@
 
 
 \section{Conditional Restricted Boltzmann Machine}
-	\subsection{Restricted Boltzmann Machine}
+    \subsection{Restricted Boltzmann Machine}
 	\begin{frame}[t]{Character}
 % 	\txtcolb{}
 	 \begin{itemize}
@@ -203,7 +203,7 @@
 % 	\end{minipage}
 
 	\end{frame}
-	\begin{frame}{}
+	\begin{frame}{Structure}
 	    \begin{figure}[t]
 	    \includegraphics[width=0.5\linewidth]{RBMStruct.png}
 	    \end{figure}
