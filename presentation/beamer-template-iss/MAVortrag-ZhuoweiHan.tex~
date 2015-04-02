@@ -32,7 +32,7 @@
 \newcommand{\presentationtype}{---A Study of Deep Learning---}
 
 % Insert presentation date here
-\newcommand{\presentationdate}{05.06.2014}
+\newcommand{\presentationdate}{16/04/2015}
 
 % Uncomment the following line, if you write in English
 %\newcommand{\lang}{german}
@@ -177,12 +177,19 @@
 \end{frame}
 
 
-\section{Conditional Restricted Boltzmann Machine}
+\section{Conditional Restricted Boltzmann Machine} %% 
+
+
+    \subsection{Product of Experts}
+	\begin{frame}{Product of Experts}
+	 
+	\end{frame}
+
     \subsection{Restricted Boltzmann Machine}
 	\begin{frame}[t]{Character}
 % 	\txtcolb{}
 	 \begin{itemize}
-	  \item Generative model 
+	  \item Generative model, capture data distrbution $P(\x|\boldsymbol{\theta})$
 	  \item Undirected graphical model, good at modeling high-dimensioanl data (speech emotion)
 	  \item Trained in unsupervised way, only use unlabeled input sequence$\x$ for learning. \note{clustering, mixture models,PoE}
 		  \begin{itemize}
@@ -192,7 +199,9 @@
 		  \end{itemize}
 % 	  \item speicifies a joint distribution over input and hidden variables, can either generating data, or with bayesian
 % rule to form conditional distribution. 
-	  \item Potential to be extend to capture temporal information.
+	  \item Potential to be extend to capture temporal information
+	  \item Binary Units of input and outpu layer
+	  \item No interconnections within the same layer
 	 \end{itemize}
 
 
@@ -203,7 +212,9 @@
 % 	\end{minipage}
 
 	\end{frame}
-	\begin{frame}{Structure}
+	
+	\begin{frame}{Restricted Boltzmann Machine}
+	\txtcolb{Structure}
 	    \begin{figure}[t]
 	    \includegraphics[width=0.5\linewidth]{RBMStruct.png}
 	    \end{figure}
@@ -211,32 +222,105 @@
 	    \begin{align}
 	      \text{Energy Function:}~&E_{\boldsymbol{\theta}} = -\mathbf{x^{T}}\mathbf{W}\mathbf{h}-\mathbf{b^{T}}\mathbf{x}-\mathbf{c^{T}}\mathbf{h}\nonumber\\
 	    \text{Joint Distribution:}~&P^{RBM} (\mathbf{x},\mathbf{h}) = \frac{1}{Z} e^{-E_{\boldsymbol{\theta}}(\mathbf{x},\mathbf{h})}\nonumber\\
-	     \text{Partition Function:}~ &Z = \sum_{\mathbf{x,h}} e^{-E_{\boldsymbol{\theta}}(\mathbf{x},\mathbf{h})}\nonumber
+	     \text{Partition Function:}~ &Z = \sum_{\mathbf{x,h}} e^{-E_{\boldsymbol{\theta}}(\mathbf{x},\mathbf{h})}\nonumber\\
+	     \text{Free Energy:}~& \mathcal{F}(\mathbf{x}) = - \log \sum_h e^{-E(\mathbf{x,h})}\nonumber
 	    \end{align}
 	    \end{minipage}
 	    
 	\end{frame}
-
-	\begin{frame}
+	\begin{frame}[t]{Inference}
 	\txtcolb{Inference}
 		\begin{minipage}[t]{0.48\linewidth}
-		\begin{figure}[t]
-			 \begin{align}
+% 		\begin{figure}[t]
+			 \begin{eqnarray}
+			 &P(\mathbf{x}) = \sum_{\mathbf{h}} P(\mathbf{x,h})\nonumber\\
+			 &P (\mathbf{h}) = \sum_{\mathbf{x}} P(\mathbf{x,h})\nonumber\\
+			 &P (\h|\x)= \frac{P(\x,\h)}{P(\x)}\nonumber\\
+			 &P(\x|\h)= \frac{P(\x,\h)}{P(\h)}\nonumber\\
 			 &P(h_{j}=1 \mid \mathbf{x})= sigmoid(\sum_{i} x_{i}W_{ij} + c_{j})\nonumber\\
 			 &P(x_{i}=1 \mid \mathbf{h}) = sigmoid(\sum_{j} W_{ij} h_{j} + b_{i})\nonumber
-			 \end{align}
-		\end{figure}
+			 \end{eqnarray}
+% 		\end{figure}
 	\end{minipage}
 % 	\begin{minipage}{0.48\linewidth}
-% 	$\x$ input units
-% 	$\h$ hidden units
-% 	$W$  weight connections
+% % 		\begin{figure}[t]
+% 			\begin{eqnarray}
+% 			\end{eqnarray}
+% % 		\end{figure}
 % 	\end{minipage}
-
 
 	\vspace{5mm}
 	 
 	\end{frame}
+	\begin{frame}{Conditional RBM}
+	    \begin{itemize}
+	     \item<1->Linear input units with independent Gaussian noise \pause
+	     \item<2>Real-valued data, e.g. spectral features
+	    \end{itemize}
+	    \only<3>{
+	    
+	    \begin{figure}[t]
+	    \includegraphics[width=0.7\linewidth]{CRBM.png}
+	    \end{figure}
+	    }
+
+
+	\end{frame}
+	
+	\begin{frame}[t]{Conditional RBM}
+	      \begin{align}
+		\text{Energy Function:}~&E^{CRBM}_{\boldsymbol{\theta}} (\mathbf{x}, \mathbf{h})  = \left\| \frac{\mathbf{x} - \tilde{\mathbf{b}}}{2} \right\|^{2}
+      -\tilde{\mathbf{c}}^T \mathbf{h}-\mathbf{x}^{T} \mathbf{W}\mathbf{h} \nonumber\\
+		\text{Free Energy:}~&\mathcal{F}(\mathbf{x}) = \left\| \mathbf{x} - \tilde{\mathbf{b}} \right\|^{2} - \log (1+e^{\tilde{\mathbf{c}}+\mathbf{x}\cdot \mathbf{W}})\nonumber\\
+		&\tilde{\mathbf{b}} = \mathbf{b} + \mathbf{A}\cdot \mathbf{x}_{<t}\nonumber\\
+		&\tilde{\mathbf{c}} = \mathbf{c} + \mathbf{B}\cdot \mathbf{x}_{<t}\nonumber\\
+		&\boldsymbol{\theta} = \left \{\mathbf{W,A,B,b,c} \right\}\nonumber
+	      \end{align}
+	\end{frame}
+	
+
+	
+	\begin{frame}{Training of Energy-based Model}
+	Optimization Method: \textcolor{red}{Maximum Likelihood}\\
+	\begin{align}P(\x) = \frac{e^{-\mathcal{F}(\x)}}{Z}\nonumber\end{align}
+	\begin{align}\label{loggra}
+	- \frac{\partial  \log P(\mathbf{x})}{\partial \boldsymbol{\theta}} = \frac{\partial \mathcal{F}(\mathbf{x})}{\partial \boldsymbol{\theta}} -
+	      \sum_{\tilde{\mathbf{x}}} P(\tilde{\mathbf{x}}) \
+		  \frac{\partial \mathcal{F}(\tilde{\mathbf{x}})}{\partial \boldsymbol{\theta}}\nonumber
+	\end{align}
+	\uncover<2->{
+	\begin{align}
+	 - \frac{\partial  \log P(\mathbf{x})}{\partial \boldsymbol{\theta}} = \frac{\partial \mathcal{F}(\mathbf{x})}{\partial \boldsymbol{\theta}} - \frac{1}{|\mathcal{N}|}
+       \sum_{\tilde{\mathbf{x}}\in \mathcal{N}} P(\tilde{\mathbf{x}}) \
+           \frac{\partial \mathcal{F}(\tilde{\mathbf{x}})}{\partial \boldsymbol{\theta}}\nonumber
+	\end{align}
+	}
+	\end{frame}
+	
+	\begin{frame}[t]{Training of Energy-based Model}
+% 		Sampling Method: \textcolor{red}{Gibbs Sampling}
+		\begin{minipage}{0.48\linewidth}
+		\begin{figure}
+		 \includegraphics[width=0.4\textwidth]{markov_chain.png}\\
+		 \includegraphics[width=0.4\textwidth]{markov_chain.png}\\
+		 \includegraphics[width=0.4\textwidth]{markov_chain.png}\\
+		 \includegraphics[width=0.4\textwidth]{markov_chain.png}
+		 \vdots
+		\end{figure}
+		\end{minipage}
+		\begin{minipage}{0.48\linewidth}
+		      \begin{eqnarray}
+			& \mathbf{x_{1}} \sim \hat{P}(\mathbf{x})\nonumber \\
+			& \mathbf{h_{1}} \sim \hat{P}(\mathbf{h}|\mathbf{x}_{1})\nonumber\\
+			& \mathbf{x_{2}} \sim \hat{P}(\mathbf{x}|\mathbf{h}_{1})\nonumber\\
+			& \mathbf{h_{2}} \sim \hat{P}(\mathbf{h}|\mathbf{x}_{2})\nonumber\\
+			& \vdots \\
+			& \mathbf{x_{t+1}} \sim \hat{P}(\mathbf{x}|\mathbf{h}_{t})\nonumber
+		      \end{eqnarray}
+		\end{minipage}
+	$t=1$, Gibbs step $\rightarrow$ \textcolor{red}{Constrastive Divergence}
+	\end{frame}
+
 
 
   
@@ -398,7 +482,7 @@ memory past hidden state.
 		}
 		\end{frame}
 		
-		\begin{frame}{Long short term memory}
+		\begin{frame}[t]{Long short term memory}
 		\textcolor{blue}{\Large Features in LSTM}
 		 \begin{itemize}
 		  \item gates are trained to learn when it shoud be open/closed. 
@@ -413,8 +497,165 @@ memory past hidden state.
 		\end{frame}
 
 \section{Experiments}
+	\begin{frame}[t]{Experiment Setup}
+	\begin{minipage}[t]{\linewidth}
+	 \begin{itemize}[<+->]
+	  \item<only@1> CRBM-DNN 
+	  \item<only@2> CRBM-LSTM
+	  \item<only@3> LSTM
+	  \item<only@4> LSTM with rectifier units
+	\end{itemize}
+	\end{minipage}\hspace{5mm}
+	
+	\begin{minipage}[t]{\linewidth}
+	    \begin{figure}[b]
+	    \only<1>{\includegraphics[width=\linewidth]{CRBMDNN.png}}
+	    \only<2>{\includegraphics[width=.8\linewidth]{CRBMLSTM.png}}
+	    \only<3>{\includegraphics[width=.8\linewidth]{LSTMpure.png}}
+	    \only<4>{\includegraphics[width=.8\linewidth]{LSTM.png}}
+	  \end{figure}
+	\end{minipage}
+
+	\end{frame}
+	
+	\begin{frame}[t]{Result}
+	      \only<1>
+	      {
+	      \begin{table}[htbp]\centering
+		  \centering
+		  Confusion matrix of CRBM-DNN result
+		  \vspace{10mm}
+		  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+		      \toprule
+		      & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+		  %     \midrule
+		      \multirow{5}{*}{\textit{True}}
+		      & & Joy & Neutral & Sadness & Anger \\
+		  %     \cmidrule{2-12}
+		      & Joy             &\textcolor{red}{57.7\%} &1.4\%   		  & 0.0\%		& 40.8\%\\
+		      & Neutral         & 17.7\%			&\textcolor{red}{54.4\%} &25.3\%   	&2.5\%     \\
+		  %     \rot{\rlap{~\textit{{True}}}}
+		      & Sadness         &1.6\%			&27.9\%   		  &\textcolor{red}{70.5\%}   &0.0\%    \\
+		      & Anger           & 39.4\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{59.1\%}    \\
+		      \midrule
+		      & \multicolumn{5}{c}{recognition rate:59.76\%}\\
+		      \bottomrule
+		  %     \cmidrule[1pt]{2-12}
+		    \end{tabular*}
+		  \label{tab:CRBMDNN}
+	      \end{table}
+	      }
+	      \only<2>
+	      {
+		\begin{table}[htbp]\centering
+		\centering
+		Confusion matrix of CRBM-LSTM result
+		\vspace{10mm}
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+		    \toprule
+		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+		%     \midrule
+		    \multirow{5}{*}{\textit{True}}
+		    & & Joy & Neutral & Sadness & Anger \\
+		%     \cmidrule{2-12}
+		    & Joy             &\textcolor{red}{11.3\%} &9.9\%   		  &   2.8\%	&    76.1\%\\
+		    & Neutral         & 0.0\%			&\textcolor{red}{72.2\%} &17.7\%   	&10.1\%     \\
+		%     \rot{\rlap{~\textit{{True}}}}
+		    & Sadness         &0.0\%			&4.8\%   		  &\textcolor{red}{88.7\%}   &6.5\%    \\
+		    & Anger           & 0.8\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{97.6\%}    \\
+		    \midrule
+		    & \multicolumn{5}{c}{recognition rate: 71.98\%}\\
+		    \bottomrule
+		%     \cmidrule[1pt]{2-12}
+		  \end{tabular*}
+		\label{tab:CRBMLSTM}
+		\end{table}
+	      }
+	      \only<3>
+	      {
+		\begin{table}[htbp]\centering
+		\centering
+		Confusion matrix of pure LSTM result
+		\vspace{10mm}
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+		    \toprule
+		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+		%     \midrule
+		    \multirow{5}{*}{\textit{True}}
+		    & & Joy & Neutral & Sadness & Anger \\
+		%     \cmidrule{2-12}
+		    & Joy             &\textcolor{red}{66.2\%} &4.2\%   		  &   0.0\%	&    29.6\%\\
+		    & Neutral         &6.3\%			&\textcolor{red}{79.7\%} &10.2\%   	&3.8\%     \\
+		%     \rot{\rlap{~\textit{{True}}}}
+		    & Sadness         &0.0\%			&19.7\%   		  &\textcolor{red}{80.3\%}   &0.0\%    \\
+		    & Anger           & 12.6\%			&0.8\%  		  &0.0\%   	&\textcolor{red}{86.6\%}    \\
+		    \midrule
+		    & \multicolumn{5}{c}{recognition rate: 81.59\%}\\
+		    \bottomrule
+		%     \cmidrule[1pt]{2-12}
+		  \end{tabular*}
+		\label{tab:pureLSTM}
+		\end{table}
+	      }
+	      \only<4>
+	      {
+		\begin{table}[htbp]\centering
+		\centering
+		Confusion matrix of LSTM-Rectifier result
+		\vspace{10mm}
+		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+		    \toprule
+		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+		%     \midrule
+		    \multirow{5}{*}{\textit{True}}
+		    & & Joy & Neutral & Sadness & Anger \\
+		%     \cmidrule{2-12}
+		    & Joy             &\textcolor{red}{57.7\%} &7.0\%   		  &   0.0\%	&    35.2\%\\
+		    & Neutral         &6.3\%			&\textcolor{red}{86.1\%} &6.3\%   	&1.3\%     \\
+		%     \rot{\rlap{~\textit{{True}}}}
+		    & Sadness         &0.0\%			&6.6\%   		  &\textcolor{red}{93.4\%}   &0.0\%    \\
+		    & Anger           & 8.7\%			&0.0\%  		  &0.0\%   	&\textcolor{red}{91.3\%}    \\
+		    \midrule
+		    & \multicolumn{5}{c}{recognition rate: 83.43\%}\\
+		    \bottomrule
+		%     \cmidrule[1pt]{2-12}
+		  \end{tabular*}
+		\label{tab:LSTMRec}
+		\end{table}
+	      }
+	\end{frame}
+
+
 
 \section{Conclusion and Outlook}
+      \begin{frame}[t]{Conclusion}
+	  \begin{itemize}
+	  \item Model with long-term dependencies shall be used for speech emotion.
+	  \item CRBM is appropriate for short time modelling, stacked CRBM can model longer dependency
+	  \item LSTM can model long time dependency, get in the task. 
+	  \item frame-based classification can also reach good result
+		\begin{itemize}
+		 \item CRBM-LSTM $71.98\%$
+		 \item LSTM $81.59\%$
+		 \item LSTM with rectifier layers $83.43\%$
+		\end{itemize}
+	  \end{itemize}
+      \end{frame}
+      
+      \begin{frame}[t]{Outlook}
+	  \begin{itemize}
+	   \item Stacking CRBM to form deeper structure
+	   \item Traing CRBM with more/larger data base 
+	   \item Second order optimization to speed up learning process
+	   \item Bi-directional LSTM, capturing future dependencies
+	  \end{itemize}
+
+      \end{frame}
+
+      \begin{frame}{End}
+      \centering \Large Thank You!
+      \end{frame}
+
 
 
 \end{document}

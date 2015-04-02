@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {ngerman}
+\beamer@sectionintoc {1}{Foundations}{5}{0}{1}
+\beamer@subsectionintoc {1}{1}{Mel Frequency Cepstral Features}{6}{0}{1}
+\beamer@subsectionintoc {1}{2}{Emotion Recognition Approaches}{7}{0}{1}
+\beamer@sectionintoc {2}{Conditional Restricted Boltzmann Machine}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Product of Experts}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Restricted Boltzmann Machine}{10}{0}{2}
+\beamer@sectionintoc {3}{Deep Neural Networks}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{Concept}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Problems and Solutions}{23}{0}{3}
+\beamer@sectionintoc {4}{Long Short Term Memory}{25}{0}{4}
+\beamer@subsectionintoc {4}{1}{Recurrent Neural Network}{26}{0}{4}
+\beamer@sectionintoc {5}{Experiments}{37}{0}{5}
+\beamer@sectionintoc {6}{Conclusion and Outlook}{46}{0}{6}
