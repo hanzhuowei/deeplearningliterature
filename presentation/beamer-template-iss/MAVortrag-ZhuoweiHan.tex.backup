@@ -73,35 +73,27 @@
 % Motivation slide
 \begin{frame}[t]{Motivation} % 1 folie
 % \textcolor{blue}{\Large Training objective}
-\uncover<1->{
-\textcolor{blue}{\Large Why speech emotion recognition}
+\only<1-1>{
+\textcolor{blue}{\Large Speech Emotion Recognition}\\
 	\begin{itemize}
-% 		\itemsep40pt
+		\itemsep20pt
 		\item Most current work focuses on speech processing based on linguistic information,  e.g.: Skype Translator
-		
 		\item More natural human-machine interaction requires paralinguistic information such as age, gender, emotion.
 		\item Speech Recognition / Speeker Identification / Emotion Recognition
-		\begin{minipage}[h]{0.48\linewidth}
-		 \includegraphics[width=\linewidth]{paraliguistic.png}
-		\end{minipage}
+		\only<1-1>{\begin{figure}[b]
+		 \includegraphics[width=0.6\linewidth]{paraliguistic.png}
+		\end{figure}}
 
 	\end{itemize}
 }
 
-\uncover<2->{
-\textcolor{blue}{\Large Deep Learning}
+\only<2-2>{
+\textcolor{blue}{\Large Deep Learning}\\
 	\begin{itemize}
-		\item Research on learning models with multilayer representations
-		      \begin{itemize}
-		       \item multilayer (feedforward) neural network
-		       \item multilayer graphical model (deep Boltzmann machine, deep belief network)
-		      \end{itemize}
-		\item Distributed representation
-		      \begin{itemize}
-		       \item each unit is a separate feature of the input
-		       \item two or more units can be active at the same time
-		      \end{itemize}
-		\item Unsupervised training
+	    \itemsep15pt
+	    \item Deep architecture for extracting complex structure and building internal representations from input
+	    \item New research area of machine learning (from shallow to deep structure)
+	    \item Widely applied in vision/audition processing, e.g. handwriting recognition (Graves, Alex, et al. 2009), traffic sign classification (Schmidhuber, et al. 2011), text translation (Google, 2014)
 	\end{itemize}
 }
 \end{frame}

@@ -73,25 +73,27 @@
 % Motivation slide
 \begin{frame}[t]{Motivation} % 1 folie
 % \textcolor{blue}{\Large Training objective}
-\uncover<1->{
-\textcolor{blue}{\Large Why speech emotion recognition}
+\only<1-1>{
+\textcolor{blue}{\Large Speech Emotion Recognition}\\
 	\begin{itemize}
-% 		\itemsep40pt
+		\itemsep20pt
 		\item Most current work focuses on speech processing based on linguistic information,  e.g.: Skype Translator
-		
 		\item More natural human-machine interaction requires paralinguistic information such as age, gender, emotion.
 		\item Speech Recognition / Speeker Identification / Emotion Recognition
-		\begin{minipage}[h]{0.48\linewidth}
-		 \includegraphics[width=\linewidth]{paraliguistic.png}
-		\end{minipage}
+		\only<1-1>{\begin{figure}[b]
+		 \includegraphics[width=0.6\linewidth]{paraliguistic.png}
+		\end{figure}}
 
 	\end{itemize}
 }
 
-\uncover<2->{
-\textcolor{blue}{\Large Deep Learning}
+\only<2-2>{
+\textcolor{blue}{\Large Deep Learning}\\
 	\begin{itemize}
-	    \item 
+	    \itemsep15pt
+	    \item Deep architecture for extracting complex structure and building internal representations from input
+	    \item New research area of machine learning (from shallow to deep structure)
+	    \item Widely applied in vision/audition processing, e.g. handwriting recognition (Graves, Alex, et al. 2009), traffic sign classification (Schmidhuber, et al. 2011), text translation (Google, 2014)
 	\end{itemize}
 }
 \end{frame}
@@ -136,8 +138,8 @@
 				\begin{figure}
 
 				\begin{eqnarray}
-				f_{mel} = 1125~\ln~(1+f_{Hz}/700)\\
-				f_{Hz} = 700 \left(\exp(f_{mel}/1125)-1\right)
+				f_{mel} = 1125~\ln~(1+f_{Hz}/700)\nonumber\\
+				f_{Hz} = 700 \left(\exp(f_{mel}/1125)-1\right)\nonumber
 				\end{eqnarray}
 
 			\end{figure}
@@ -169,7 +171,7 @@
 	   \item learning representations from high-dim data
 	   \item extracting appropriate features without hand-crafting
 	   \item low-level features are used to build high-level features as network gets deeper
-	   \item frame-based classfication
+	   \item frame-based classification
 	  \end{itemize}
 
 	\end{minipage}
@@ -180,28 +182,23 @@
 \section{Conditional Restricted Boltzmann Machine} %% 
 
 
-    \subsection{Product of Experts}
-	\begin{frame}{Product of Experts}
-	 
-	\end{frame}
 
     \subsection{Restricted Boltzmann Machine}
-	\begin{frame}[t]{Character}
+	\begin{frame}[t]{Concepts}
 % 	\txtcolb{}
 	 \begin{itemize}
+	  \itemsep10pt
 	  \item Generative graphical model, capture data distrbution $P(\x|\boldsymbol{\theta})$
-	  \item Successfully applied in motion capture (Graham W. Taylor, Geoffrey E. Hinton, 2006)
-	  \item Trained in unsupervised way, only use unlabeled input sequence$\x$ for learning. \note{clustering, mixture models,PoE}
+	  \item Trained in unsupervised way, only use unlabeled input sequence$\x$ for learning. 
 		  \begin{itemize}
 		   \item automatically extract useful features from data 
 		   \item Find hidden structure (distribution). 
 		   \item Learned features used for prediction or classification
 		  \end{itemize}
+	  \item Successfully applied in motion capture (Graham W. Taylor, Geoffrey E. Hinton, 2006)
 % 	  \item speicifies a joint distribution over input and hidden variables, can either generating data, or with bayesian
 % rule to form conditional distribution. 
 	  \item Potential to be extend to capture temporal information
-	  \item Binary Units of input and outpu layer
-	  \item No interconnections within the same layer
 	 \end{itemize}
 
 
@@ -213,11 +210,12 @@
 
 	\end{frame}
 	
-	\begin{frame}{Restricted Boltzmann Machine}
+	\begin{frame}[t]{Restricted Boltzmann Machine}
 	\txtcolb{Structure}
 	    \begin{figure}[t]
-	    \includegraphics[width=0.5\linewidth]{RBMStruct.png}
+	    \includegraphics[width=0.9\linewidth]{RBMStruct.png}
 	    \end{figure}
+	    \only<2->{
 	    \begin{minipage}{0.48\linewidth}
 	    \begin{align}
 	      \text{Energy Function:}~&E_{\boldsymbol{\theta}} = -\mathbf{x^{T}}\mathbf{W}\mathbf{h}-\mathbf{b^{T}}\mathbf{x}-\mathbf{c^{T}}\mathbf{h}\nonumber\\
@@ -226,20 +224,22 @@
 	     \text{Free Energy:}~& \mathcal{F}(\mathbf{x}) = - \log \sum_h e^{-E(\mathbf{x,h})}\nonumber
 	    \end{align}
 	    \end{minipage}
-	    
+	    }
 	\end{frame}
+	
 	\begin{frame}[t]{Inference}
 	\txtcolb{Inference}
 		\begin{minipage}[t]{0.48\linewidth}
 % 		\begin{figure}[t]
-			 \begin{eqnarray}
-			 &P(\mathbf{x}) = \sum_{\mathbf{h}} P(\mathbf{x,h})\nonumber\\
+			 \begin{align}
+			 &P(\mathbf{x}) = \sum_{\mathbf{h}} P(\mathbf{x,h})\nonumber\\ 
 			 &P (\mathbf{h}) = \sum_{\mathbf{x}} P(\mathbf{x,h})\nonumber\\
-			 &P (\h|\x)= \frac{P(\x,\h)}{P(\x)}\nonumber\\
-			 &P(\x|\h)= \frac{P(\x,\h)}{P(\h)}\nonumber\\
-			 &P(h_{j}=1 \mid \mathbf{x})= sigmoid(\sum_{i} x_{i}W_{ij} + c_{j})\nonumber\\
-			 &P(x_{i}=1 \mid \mathbf{h}) = sigmoid(\sum_{j} W_{ij} h_{j} + b_{i})\nonumber
-			 \end{eqnarray}
+			 \only<2->{&P (\h|\x)= \dfrac{P(\x,\h)}{P(\x)}\nonumber\\
+			 &P(\x|\h)= \dfrac{P(\x,\h)}{P(\h)}\nonumber\\}
+			 \only<3->{&P(h_{j}=1 \mid \mathbf{x})= sigmoid(\sum_{i} x_{i}W_{ij} + c_{j})\nonumber\\
+			 &P(x_{i}=1 \mid \mathbf{h}) = sigmoid(\sum_{j} W_{ij} h_{j} + b_{i})\nonumber}
+			 \notag
+			 \end{align}
 % 		\end{figure}
 	\end{minipage}
 % 	\begin{minipage}{0.48\linewidth}
@@ -252,16 +252,26 @@
 	\vspace{5mm}
 	 
 	\end{frame}
-	\begin{frame}{Conditional RBM}
-	    \begin{itemize}
-	     \item<1->Linear input units with independent Gaussian noise \pause
-	     \item<2>Real-valued data, e.g. spectral features
+	\begin{frame}[t]{Conditional RBM}
+	    \only<1-2>{\begin{itemize}
+	     \item Linear input units with independent Gaussian noise
+	     \item Real-valued data, e.g. spectral features
 	    \end{itemize}
-	    \only<3>{
-	    
+	    }
+	    \only<2->{
 	    \begin{figure}[t]
-	    \includegraphics[width=0.7\linewidth]{CRBM.png}
+	    \includegraphics<2>[width=0.7\linewidth]{CRBM.png}
+	    \includegraphics<3>[scale = 0.2]{CRBM.png}
 	    \end{figure}
+	    }
+	    \only<3->{\begin{align}
+	      \text{Energy Function:}~&E^{CRBM}_{\boldsymbol{\theta}} (\mathbf{x}, \mathbf{h})  = \left\| \frac{\mathbf{x} - \tilde{\mathbf{b}}}{2} \right\|^{2}
+    -\tilde{\mathbf{c}}^T \mathbf{h}-\mathbf{x}^{T} \mathbf{W}\mathbf{h} \nonumber\\
+	      \text{Free Energy:}~&\mathcal{F}(\mathbf{x}) = \left\| \mathbf{x} - \tilde{\mathbf{b}} \right\|^{2} - \log (1+e^{\tilde{\mathbf{c}}+\mathbf{x}\cdot \mathbf{W}})\nonumber\\
+	      &\tilde{\mathbf{b}} = \mathbf{b} + \mathbf{A}\cdot \mathbf{x}_{<t}\nonumber\\
+	      &\tilde{\mathbf{c}} = \mathbf{c} + \mathbf{B}\cdot \mathbf{x}_{<t}\nonumber\\
+	      &\boldsymbol{\theta} = \left \{\mathbf{W,A,B,b,c} \right\}\nonumber
+	    \end{align}
 	    }
 
 
