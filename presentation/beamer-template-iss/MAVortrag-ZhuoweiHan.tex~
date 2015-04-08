@@ -24,7 +24,7 @@
 \newcommand{\txtcolb}[1]{\textcolor{blue}{\Large #1}}
 
 % Insert presentation title here
-\newcommand{\presentationtitle}{Deep Neural Network for Speech Emotion Recognition}
+\newcommand{\presentationtitle}{Deep Network for Speech Emotion Recognition}
 \newcommand{\shortpresentationtitle}{Deep Learning}
 
 % Insert type of presentation here (or comment line), probably one of:
@@ -47,6 +47,7 @@
 \usepackage{graphicx}
 \usepackage{pgfpages}
 \graphicspath{ {../Fig/} }
+\usepackage{tikz}
 % \setbeameroption{show notes on second screen=left}
 % \setbeameroption{second mode text on second screen=left}
 % \setbeameroption{show notes}
@@ -88,10 +89,19 @@
 }
 
 \uncover<2->{
-\textcolor{blue}{\Large Deep Network Applications}
+\textcolor{blue}{\Large Deep Learning}
 	\begin{itemize}
-		\item Handwriting Digit Recognition
-		\item Image Recognition
+		\item Research on learning models with multilayer representations
+		      \begin{itemize}
+		       \item multilayer (feedforward) neural network
+		       \item multilayer graphical model (deep Boltzmann machine, deep belief network)
+		      \end{itemize}
+		\item Distributed representation
+		      \begin{itemize}
+		       \item each unit is a separate feature of the input
+		       \item two or more units can be active at the same time
+		      \end{itemize}
+		\item Unsupervised training
 	\end{itemize}
 }
 \end{frame}
@@ -189,8 +199,8 @@
 	\begin{frame}[t]{Character}
 % 	\txtcolb{}
 	 \begin{itemize}
-	  \item Generative model, capture data distrbution $P(\x|\boldsymbol{\theta})$
-	  \item Undirected graphical model, good at modeling high-dimensioanl data (speech emotion)
+	  \item Generative graphical model, capture data distrbution $P(\x|\boldsymbol{\theta})$
+	  \item Successfully applied in motion capture (Graham W. Taylor, Geoffrey E. Hinton, 2006)
 	  \item Trained in unsupervised way, only use unlabeled input sequence$\x$ for learning. \note{clustering, mixture models,PoE}
 		  \begin{itemize}
 		   \item automatically extract useful features from data 
@@ -325,89 +335,151 @@
 
   
 %% =========
-\section{Deep Neural Networks}%4 folies
-	\subsection{Concept}		
-		\begin{minipage}[t]{0.48\linewidth}
-		\begin{figure}
-			Computing net-activation
-			\begin{eqnarray}
-				\underline{z}^{(l+1)}_k &=& {\bf W}^{(l)}\underline{a}^{(l)}_k + \underline{b}^{(l)} \nonumber
-\\
-				\underline{a}^{(l+1)}_k &=& \underline{\Phi} \left ( \underline{z}^{(l+1)}_k \right )
-\nonumber\\
-				\hat{\underline{y}}_k &=& \underline{a}^{(ol)}_k \nonumber
-			\end{eqnarray}
-		\end{figure}
-		\end{minipage}\hfill
-		\begin{minipage}[t]{0.48\linewidth}
-			\begin{itemize}
-				\item Arbitrary non-linear mapping from $\underline{x}_k$ to  $\hat{\underline{y}}_k$ possible
-				\item Relation $N \Leftrightarrow$ Complexity
-				\item Deep Architectures $(l \uparrow)$ more efficient than shallow ones ($l\downarrow,
-N_l\uparrow$)
-			\end{itemize}
-		\end{minipage}
-		
+\section{Multilayer Neural Network}%4 folies
+	\subsection{Function and Training}		
+	\begin{frame}[t]{Structure and Function}
+	\txtcolb{N-hidden layers neural network }
+	  \begin{minipage}{0.45\linewidth}
+	      \begin{itemize}
+	       \itemsep10pt
+	       \item Hidden layer pre-activation:\\
+	       $\mathbf{a}(\x) =\mathbf{W}^{(1)}\x + \mathbf{b}^{(1)}$\\
+	       $a_{j}(\x) = \sum_i w_{ji}^{(1)}x_{i} + b_{j}^{(1)}$
+	       \item Hidden layer activation:\\
+	       $\h = f(\mathbf{a})$
+	       \item Output layer activation:\\
+	       $\hat{y}(\x) = o(\mathbf{W}^{(N+1)}\h^{(N)} + \mathbf{b}^{(N+1)} )$
+	      \end{itemize}
+	  \end{minipage}
+	  
+% 	  \begin{minipage}{0.45\linewidth}
+% 		\begin{figure}
+% 		      \includegraphics{}
+% 		\end{figure}
+% 	  \end{minipage}
+
+	\end{frame}
 	
-	\begin{frame}[t]{Determining the parameters}
-		\textcolor{blue}{\Large Training objective}
-			\begin{eqnarray}
-				J({\bf W}, \underline{b}) &=& \sum_{\forall k} \frac{1}{2} ||\underline{y}_k -
-\hat{\underline{y}}_k||^2 + \frac{\lambda}{2} \sum_{\forall l} ||{\bf W}^{(l)}||_F^2 \\
-				{\bf W}, \underline{b} &=& \arg \min_{{\bf W}, \underline{b}} J({\bf W}, \underline{b})
-			\end{eqnarray}
-			
-		\textcolor{blue}{\Large Numerical minimization}		
+	\begin{frame}[t]{Training}
+		\textcolor{blue}{\Large Empirical Risk Minimization}
 		\begin{itemize}
-			\item Gradient calculation with Backpropagation
-			\item Stochastic gradient descent
-			\item {\bf L}imited memory {\bf B}royden-{\bf F}letcher-{\bf G}oldfarb-{\bf S}hanno (L-BFGS)
-		\end{itemize}	
+		 \item learning algorithms\\
+		 \begin{eqnarray}
+			\text{arg}~\underset{\btheta}{\mathrm{min}} \frac{1}{M}\sum_m l(\hat{y}(\x^{(m)};\btheta),y^{(m)}) + \lambda \Omega(\btheta)\nonumber
+			\end{eqnarray}
+		 \item loss function $l(\hat{y}(\x^{(m)};\btheta),y^{(m)})$ \\
+			for sigmoid activation $l(\btheta)= \sum_m \frac{1}{2} \left\| y^{(m)}-\hat{y}^{(m)}\right\| ^2$\\
+		 \item regularizer $\lambda \Omega(\btheta)$
+		\end{itemize}
+		
+		\txtcolb{Optimization}
+		\begin{itemize}
+		 \item Gradient calculation with Backpropagation
+		 \item Stochastic/Mini-batch gradient descent
+		\end{itemize}
+
+		
+		
 	\end{frame}
 	
 	
 	\subsection{Problems and Solutions}
-	\begin{frame}[t]{Problems}
+		
+	\begin{frame}[t]{Pre-training}
+		\begin{minipage}[h]{\linewidth}
+		\txtcolb{Vanishing Gradient}
+			\begin{itemize}
+				\item Training time increases as network gets deeper
+				\item Gradient shrink exponentially and training end up local minima
+				\item Caused by random initialization of network parameters
+			\end{itemize}
+		\end{minipage}\vspace{5mm}
+		\begin{minipage}[h]{\linewidth}
+		\visible<2->{
+		\txtcolb{Unsupervised layerwise pre-training}
 		\begin{itemize}
-			\item Optimization problem non-convex\\
-			$\Rightarrow$ getting stuck in poor local minima
-			\item Diffusion of gradients
-			\item Large p small n problem $\Rightarrow$ overfitting
-	
-	\end{itemize}
-
-	\end{frame}
-	\begin{frame}[t]{Solutions}
-		\begin{minipage}[h]{0.48\linewidth}
-			\begin{itemize}
-				\item Layerwise Pre-training
-			\end{itemize}
-		\end{minipage}\hfill
-		\begin{minipage}[h]{0.48\linewidth}
-			\begin{itemize}
-				\item Layerwise Pre-training
-			\end{itemize}
+		 \itemsep8pt
+		 \item Pretrain the deep network layer by layer to build a stacked auto-encoder
+		 \item Each layer is trained as a single hidden layer auto-encoder by minimizing average reconstruction error:\\
+		      $\mathrm{min}~l_{AE} = \sum_m \frac{1}{2}\left\|\x^{(m)}-\hat{\x}^{(m)}\right\|^2$
+		 \item Fine-tuning the entire deep network with supervised training
+		\end{itemize}
+		}
 		\end{minipage}		
 	\end{frame}
+
+% 		\begin{itemize}
+% 			\item Optimization problem non-convex\\
+% 			$\Rightarrow$ getting stuck in poor local minima
+% 			\item Diffusion of gradients
+% 			\item Large p small n problem $\Rightarrow$ overfitting
+% 	
+% 	\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%Noob pictures for pretraining%%%%%%%%%%%%%%%
+	\begin{frame}[t]{Pre-training}
+	 \includegraphics[width=0.9\linewidth]{layerwisewhole.png}
+	\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	
+	\begin{frame}[t]{Regularization}
+		\begin{minipage}[h]{\linewidth}
+		\txtcolb{Overfitting}
+			\begin{itemize}
+				\item Huge amount of parameters in deep network
+				\item Not enough data for training
+				\item Poor generalization 
+			\end{itemize}
+		\end{minipage}\vspace{5mm}
+		\visible<2->{
+		\begin{minipage}[h]{\linewidth}
+		\txtcolb{Regularization}
+			\begin{itemize}
+			\item Add weight penalization $\lambda \left\| \mathbf{w} \right\| _{p}$ to loss function 
+			      \begin{eqnarray}
+			      \text{arg}~\underset{\btheta}{\mathrm{min}} \frac{1}{M}\sum_m l(\hat{y}(\x^{(m)};\btheta),y^{(m)}) + \lambda \left\| \mathbf{w} \right\| _{p}\nonumber
+			      \end{eqnarray}
+			\item 	In convex optimization:
+	 		\begin{eqnarray}
+			\text{arg}~\underset{\btheta}{\mathrm{min}} \frac{1}{M}\sum_m l(\hat{y}(\x^{(m)};\btheta),y^{(m)}),  s.t. \left\|\mathbf{w}\right\|_p \leq C\nonumber
+			\end{eqnarray}
+			\end{itemize}
+		\end{minipage}	
+		}
+	\end{frame}
+	
+	\begin{frame}[t]{Regularization}
+	\txtcolb{P-Norm}
+	\begin{eqnarray}
+			      \left\| \mathbf{w} \right\| _{p} := \left( \sum_{n=1}^{n} |w_{i}|^{p} \right) ^{1/p} = \sqrt[p]{|w_1|^p +,..., +|w_n|^p}\nonumber
+	\end{eqnarray}
+	Widely used: L1- and L2-regularization ($p=1$ and $p=2$)
+	\begin{figure}[t]
+	\includegraphics<1>[width=0.7\linewidth]{contoursreg.png}
+	\includegraphics<2>[width=0.7\linewidth]{l1vsl2.png}
+% 	 \only<1-1>{\includegraphics[width=0.7\linewidth]{contoursreg.png}}
+% 	 \only<2->{\includegraphics[width=0.7\linewidth]{l1vsl2.png}}
+	\end{figure}
+
+	\end{frame}
+
 
 \section{Long Short Term Memory}
 	\subsection{Recurrent Neural Network}
 		\begin{frame}[t]{Recurrent Neural Network}
 % 			\begin{minipage}[t][][t]{0.48\linewidth}
 			\textcolor{blue}{\Large Concepts of RNN}
-			\pause
 				\begin{itemize}[<+->]
 % 				 \itemsep10pt
 				 \item modelling sequential data, emotion in speech .
 				 \item Same Structure as MLP but differs from feed-forward network, enabling
-nonlinear mapping.		\note<2>{tell me a story.}
-				 \only<3>{\begin{figure}
+nonlinear mapping
+				 \only<2-2>{
 					\begin{eqnarray}
 						&h_{t} = \mathcal{H}(W_{xh}x_{t}+W_{hh}h_{t-1} + b_{h})\nonumber\\
 						&y_{t} = W_{hy}h_{t} + b_{y}\nonumber
 					\end{eqnarray}
-
-				 \end{figure}
 				 }
 				
 				 \item Feedback connection between previous hidden units and current hidden units, enabling
@@ -496,145 +568,148 @@ memory past hidden state.
 
 		\end{frame}
 
-\section{Experiments}
-	\begin{frame}[t]{Experiment Setup}
-	\begin{minipage}[t]{\linewidth}
-	 \begin{itemize}[<+->]
-	  \item<only@1> CRBM-DNN 
-	  \item<only@2> CRBM-LSTM
-	  \item<only@3> LSTM
-	  \item<only@4> LSTM with rectifier units
-	\end{itemize}
-	\end{minipage}\hspace{5mm}
-	
-	\begin{minipage}[t]{\linewidth}
-	    \begin{figure}[b]
-	    \only<1>{\includegraphics[width=\linewidth]{CRBMDNN.png}}
-	    \only<2>{\includegraphics[width=.8\linewidth]{CRBMLSTM.png}}
-	    \only<3>{\includegraphics[width=.8\linewidth]{LSTMpure.png}}
-	    \only<4>{\includegraphics[width=.8\linewidth]{LSTM.png}}
-	  \end{figure}
-	\end{minipage}
-
-	\end{frame}
-	
-	\begin{frame}[t]{Result}
-	      \only<1>
-	      {
-	      \begin{table}[htbp]\centering
-		  \centering
-		  Confusion matrix of CRBM-DNN result
-		  \vspace{10mm}
-		  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
-		      \toprule
-		      & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
-		  %     \midrule
-		      \multirow{5}{*}{\textit{True}}
-		      & & Joy & Neutral & Sadness & Anger \\
-		  %     \cmidrule{2-12}
-		      & Joy             &\textcolor{red}{57.7\%} &1.4\%   		  & 0.0\%		& 40.8\%\\
-		      & Neutral         & 17.7\%			&\textcolor{red}{54.4\%} &25.3\%   	&2.5\%     \\
-		  %     \rot{\rlap{~\textit{{True}}}}
-		      & Sadness         &1.6\%			&27.9\%   		  &\textcolor{red}{70.5\%}   &0.0\%    \\
-		      & Anger           & 39.4\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{59.1\%}    \\
-		      \midrule
-		      & \multicolumn{5}{c}{recognition rate:59.76\%}\\
-		      \bottomrule
-		  %     \cmidrule[1pt]{2-12}
-		    \end{tabular*}
-		  \label{tab:CRBMDNN}
-	      \end{table}
-	      }
-	      \only<2>
-	      {
-		\begin{table}[htbp]\centering
-		\centering
-		Confusion matrix of CRBM-LSTM result
-		\vspace{10mm}
-		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
-		    \toprule
-		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
-		%     \midrule
-		    \multirow{5}{*}{\textit{True}}
-		    & & Joy & Neutral & Sadness & Anger \\
-		%     \cmidrule{2-12}
-		    & Joy             &\textcolor{red}{11.3\%} &9.9\%   		  &   2.8\%	&    76.1\%\\
-		    & Neutral         & 0.0\%			&\textcolor{red}{72.2\%} &17.7\%   	&10.1\%     \\
-		%     \rot{\rlap{~\textit{{True}}}}
-		    & Sadness         &0.0\%			&4.8\%   		  &\textcolor{red}{88.7\%}   &6.5\%    \\
-		    & Anger           & 0.8\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{97.6\%}    \\
-		    \midrule
-		    & \multicolumn{5}{c}{recognition rate: 71.98\%}\\
-		    \bottomrule
-		%     \cmidrule[1pt]{2-12}
-		  \end{tabular*}
-		\label{tab:CRBMLSTM}
-		\end{table}
-	      }
-	      \only<3>
-	      {
-		\begin{table}[htbp]\centering
-		\centering
-		Confusion matrix of pure LSTM result
-		\vspace{10mm}
-		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
-		    \toprule
-		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
-		%     \midrule
-		    \multirow{5}{*}{\textit{True}}
-		    & & Joy & Neutral & Sadness & Anger \\
-		%     \cmidrule{2-12}
-		    & Joy             &\textcolor{red}{66.2\%} &4.2\%   		  &   0.0\%	&    29.6\%\\
-		    & Neutral         &6.3\%			&\textcolor{red}{79.7\%} &10.2\%   	&3.8\%     \\
-		%     \rot{\rlap{~\textit{{True}}}}
-		    & Sadness         &0.0\%			&19.7\%   		  &\textcolor{red}{80.3\%}   &0.0\%    \\
-		    & Anger           & 12.6\%			&0.8\%  		  &0.0\%   	&\textcolor{red}{86.6\%}    \\
-		    \midrule
-		    & \multicolumn{5}{c}{recognition rate: 81.59\%}\\
-		    \bottomrule
-		%     \cmidrule[1pt]{2-12}
-		  \end{tabular*}
-		\label{tab:pureLSTM}
-		\end{table}
-	      }
-	      \only<4>
-	      {
-		\begin{table}[htbp]\centering
-		\centering
-		Confusion matrix of LSTM-Rectifier result
-		\vspace{10mm}
-		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
-		    \toprule
-		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
-		%     \midrule
-		    \multirow{5}{*}{\textit{True}}
-		    & & Joy & Neutral & Sadness & Anger \\
-		%     \cmidrule{2-12}
-		    & Joy             &\textcolor{red}{57.7\%} &7.0\%   		  &   0.0\%	&    35.2\%\\
-		    & Neutral         &6.3\%			&\textcolor{red}{86.1\%} &6.3\%   	&1.3\%     \\
-		%     \rot{\rlap{~\textit{{True}}}}
-		    & Sadness         &0.0\%			&6.6\%   		  &\textcolor{red}{93.4\%}   &0.0\%    \\
-		    & Anger           & 8.7\%			&0.0\%  		  &0.0\%   	&\textcolor{red}{91.3\%}    \\
-		    \midrule
-		    & \multicolumn{5}{c}{recognition rate: 83.43\%}\\
-		    \bottomrule
-		%     \cmidrule[1pt]{2-12}
-		  \end{tabular*}
-		\label{tab:LSTMRec}
-		\end{table}
-	      }
-	\end{frame}
+% \section{Experiments}
+% 	\begin{frame}[t]{Experiment Setup}
+% 	\begin{minipage}[t]{\linewidth}
+% 	 \begin{itemize}[<+->]
+% 	  \item<only@1> CRBM-DNN 
+% 	  \item<only@2> CRBM-LSTM
+% 	  \item<only@3> LSTM
+% 	  \item<only@4> LSTM with rectifier units
+% 	\end{itemize}
+% 	\end{minipage}\hspace{5mm}
+% 	
+% 	\begin{minipage}[t]{\linewidth}
+% 	    \begin{figure}[b]
+% 	    \only<1>{\includegraphics[width=\linewidth]{CRBMDNN.png}}
+% 	    \only<2>{\includegraphics[width=.8\linewidth]{CRBMLSTM.png}}
+% 	    \only<3>{\includegraphics[width=.8\linewidth]{LSTMpure.png}}
+% 	    \only<4>{\includegraphics[width=.8\linewidth]{LSTM.png}}
+% 	  \end{figure}
+% 	\end{minipage}
+% 
+% 	\end{frame}
+% 	
+% 	\begin{frame}[t]{Result}
+% 	      \only<1>
+% 	      {
+% 	      \begin{table}[htbp]\centering
+% 		  \centering
+% 		  Confusion matrix of CRBM-DNN result
+% 		  \vspace{10mm}
+% 		  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+% 		      \toprule
+% 		      & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+% 		  %     \midrule
+% 		      \multirow{5}{*}{\textit{True}}
+% 		      & & Joy & Neutral & Sadness & Anger \\
+% 		  %     \cmidrule{2-12}
+% 		      & Joy             &\textcolor{red}{57.7\%} &1.4\%   		  & 0.0\%		& 40.8\%\\
+% 		      & Neutral         & 17.7\%			&\textcolor{red}{54.4\%} &25.3\%   	&2.5\%     \\
+% 		  %     \rot{\rlap{~\textit{{True}}}}
+% 		      & Sadness         &1.6\%			&27.9\%   		  &\textcolor{red}{70.5\%}   &0.0\%    \\
+% 		      & Anger           & 39.4\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{59.1\%}    \\
+% 		      \midrule
+% 		      & \multicolumn{5}{c}{recognition rate:59.76\%}\\
+% 		      \bottomrule
+% 		  %     \cmidrule[1pt]{2-12}
+% 		    \end{tabular*}
+% 		  \label{tab:CRBMDNN}
+% 	      \end{table}
+% 	      }
+% 	      \only<2>
+% 	      {
+% 		\begin{table}[htbp]\centering
+% 		\centering
+% 		Confusion matrix of CRBM-LSTM result
+% 		\vspace{10mm}
+% 		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+% 		    \toprule
+% 		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+% 		%     \midrule
+% 		    \multirow{5}{*}{\textit{True}}
+% 		    & & Joy & Neutral & Sadness & Anger \\
+% 		%     \cmidrule{2-12}
+% 		    & Joy             &\textcolor{red}{11.3\%} &9.9\%   		  &   2.8\%	&    76.1\%\\
+% 		    & Neutral         & 0.0\%			&\textcolor{red}{72.2\%} &17.7\%   	&10.1\%     \\
+% 		%     \rot{\rlap{~\textit{{True}}}}
+% 		    & Sadness         &0.0\%			&4.8\%   		  &\textcolor{red}{88.7\%}   &6.5\%    \\
+% 		    & Anger           & 0.8\%			&1.6\%  		  &0.0\%   	&\textcolor{red}{97.6\%}    \\
+% 		    \midrule
+% 		    & \multicolumn{5}{c}{recognition rate: 71.98\%}\\
+% 		    \bottomrule
+% 		%     \cmidrule[1pt]{2-12}
+% 		  \end{tabular*}
+% 		\label{tab:CRBMLSTM}
+% 		\end{table}
+% 	      }
+% 	      \only<3>
+% 	      {
+% 		\begin{table}[htbp]\centering
+% 		\centering
+% 		Confusion matrix of pure LSTM result
+% 		\vspace{10mm}
+% 		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+% 		    \toprule
+% 		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+% 		%     \midrule
+% 		    \multirow{5}{*}{\textit{True}}
+% 		    & & Joy & Neutral & Sadness & Anger \\
+% 		%     \cmidrule{2-12}
+% 		    & Joy             &\textcolor{red}{66.2\%} &4.2\%   		  &   0.0\%	&    29.6\%\\
+% 		    & Neutral         &6.3\%			&\textcolor{red}{79.7\%} &10.2\%   	&3.8\%     \\
+% 		%     \rot{\rlap{~\textit{{True}}}}
+% 		    & Sadness         &0.0\%			&19.7\%   		  &\textcolor{red}{80.3\%}   &0.0\%    \\
+% 		    & Anger           & 12.6\%			&0.8\%  		  &0.0\%   	&\textcolor{red}{86.6\%}    \\
+% 		    \midrule
+% 		    & \multicolumn{5}{c}{recognition rate: 81.59\%}\\
+% 		    \bottomrule
+% 		%     \cmidrule[1pt]{2-12}
+% 		  \end{tabular*}
+% 		\label{tab:pureLSTM}
+% 		\end{table}
+% 	      }
+% 	      \only<4>
+% 	      {
+% 		\begin{table}[htbp]\centering
+% 		\centering
+% 		Confusion matrix of LSTM-Rectifier result
+% 		\vspace{10mm}
+% 		\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}} cl*{4}c @{}}
+% 		    \toprule
+% 		    & \multicolumn{5}{c}{\textit{{Classfied}}} \\[1ex]
+% 		%     \midrule
+% 		    \multirow{5}{*}{\textit{True}}
+% 		    & & Joy & Neutral & Sadness & Anger \\
+% 		%     \cmidrule{2-12}
+% 		    & Joy             &\textcolor{red}{57.7\%} &7.0\%   		  &   0.0\%	&    35.2\%\\
+% 		    & Neutral         &6.3\%			&\textcolor{red}{86.1\%} &6.3\%   	&1.3\%     \\
+% 		%     \rot{\rlap{~\textit{{True}}}}
+% 		    & Sadness         &0.0\%			&6.6\%   		  &\textcolor{red}{93.4\%}   &0.0\%    \\
+% 		    & Anger           & 8.7\%			&0.0\%  		  &0.0\%   	&\textcolor{red}{91.3\%}    \\
+% 		    \midrule
+% 		    & \multicolumn{5}{c}{recognition rate: 83.43\%}\\
+% 		    \bottomrule
+% 		%     \cmidrule[1pt]{2-12}
+% 		  \end{tabular*}
+% 		\label{tab:LSTMRec}
+% 		\end{table}
+% 	      }
+% 	\end{frame}
 
 
 
 \section{Conclusion and Outlook}
       \begin{frame}[t]{Conclusion}
 	  \begin{itemize}
-	  \item Model with long-term dependencies shall be used for speech emotion.
-	  \item CRBM is appropriate for short time modelling, stacked CRBM can model longer dependency
-	  \item LSTM can model long time dependency, get in the task. 
-	  \item frame-based classification can also reach good result
+	  \itemsep10pt
+	  \item Model with long-term dependencies shall be used for speech emotion
+	  \item CRBM is appropriate for short-term modelling, but not for long-term variation
+	  \item LSTM is good at modelling long time dependency 
+	  \item Frame-based classification can also reach good result
+		\vspace{5mm}
 		\begin{itemize}
+		 \itemsep10pt
 		 \item CRBM-LSTM $71.98\%$
 		 \item LSTM $81.59\%$
 		 \item LSTM with rectifier layers $83.43\%$
@@ -653,7 +728,7 @@ memory past hidden state.
       \end{frame}
 
       \begin{frame}{End}
-      \centering \Large Thank You!
+	\Large Thank You!
       \end{frame}
 
 

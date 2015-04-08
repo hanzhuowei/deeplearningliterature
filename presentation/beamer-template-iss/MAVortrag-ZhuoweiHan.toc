@@ -6,10 +6,9 @@
 \beamer@sectionintoc {2}{Conditional Restricted Boltzmann Machine}{8}{0}{2}
 \beamer@subsectionintoc {2}{1}{Product of Experts}{9}{0}{2}
 \beamer@subsectionintoc {2}{2}{Restricted Boltzmann Machine}{10}{0}{2}
-\beamer@sectionintoc {3}{Deep Neural Networks}{20}{0}{3}
-\beamer@subsectionintoc {3}{1}{Concept}{21}{0}{3}
+\beamer@sectionintoc {3}{Multilayer Neural Network}{20}{0}{3}
+\beamer@subsectionintoc {3}{1}{Function and Training}{21}{0}{3}
 \beamer@subsectionintoc {3}{2}{Problems and Solutions}{23}{0}{3}
-\beamer@sectionintoc {4}{Long Short Term Memory}{25}{0}{4}
-\beamer@subsectionintoc {4}{1}{Recurrent Neural Network}{26}{0}{4}
-\beamer@sectionintoc {5}{Experiments}{37}{0}{5}
-\beamer@sectionintoc {6}{Conclusion and Outlook}{46}{0}{6}
+\beamer@sectionintoc {4}{Long Short Term Memory}{30}{0}{4}
+\beamer@subsectionintoc {4}{1}{Recurrent Neural Network}{31}{0}{4}
+\beamer@sectionintoc {5}{Conclusion and Outlook}{41}{0}{5}
